@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--
+    <img src="ModularPieces/RSC_Player_Stats.png" style="z-index: 20; position: absolute; top:0px; left: 0px; opacity: 50%;">
+    -->
+
+    <div class="topstuff">
+        <img id="leftlogo" src="">
+        <img id="rightlogo" src="">
+        <div class="teamnames">
+            <span id="leftname"></span>
+            <span id="rightname"></span>
+        </div>
+    </div>
+    
+    <div class="bottomstuff">
+        <!-- <img id="tempback" src="ModularPieces/tempback.png"> -->
+        <img id="statsback" src="ModularPieces/RSC_Player_Stats.png">
+        <img id="sponsors" src="ModularPieces/sponsors.png">
+        <!-- <img id="back" src="ModularPieces/back.png"> -->
+    </div>
+
+    <div class="allstats">
+
+    <div class="leftstats">
+        <span id="player1name" class="stat name player1"></span>
+        <span id="player2name" class="stat name player2"></span>
+        <span id="player3name" class="stat name player3"></span>
+        <span id="player4name" class="stat name player4"></span>
+
+        <div class="games">
+            <span id="X1Y1Z1" class="stat player1"></span>
+            <span id="X2Y1Z1" class="stat player2"></span>
+            <span id="X3Y1Z1" class="stat player3"></span>
+            <span id="X4Y1Z1" class="stat player4"></span>
+        </div>
+
+        <div class="goals">
+            <span id="X1Y2Z1" class="stat player1"></span>
+            <span id="X2Y2Z1" class="stat player2"></span>
+            <span id="X3Y2Z1" class="stat player3"></span>
+            <span id="X4Y2Z1" class="stat player4"></span>
+        </div>
+
+        <div class="assists">
+            <span id="X1Y3Z1" class="stat player1"></span>
+            <span id="X2Y3Z1" class="stat player2"></span>
+            <span id="X3Y3Z1" class="stat player3"></span>
+            <span id="X4Y3Z1" class="stat player4"></span>
+        </div>
+
+        <div class="saves">
+            <span id="X1Y4Z1" class="stat player1"></span>
+            <span id="X2Y4Z1" class="stat player2"></span>
+            <span id="X3Y4Z1" class="stat player3"></span>
+            <span id="X4Y4Z1" class="stat player4"></span>
+        </div>
+
+        <div class="shots">
+            <span id="X1Y5Z1" class="stat player1"></span>
+            <span id="X2Y5Z1" class="stat player2"></span>
+            <span id="X3Y5Z1" class="stat player3"></span>
+            <span id="X4Y5Z1" class="stat player4"></span>
+        </div>
+
+        <div class="wins">
+            <span id="X1Y6Z1" class="stat player1"></span>
+            <span id="X2Y6Z1" class="stat player2"></span>
+            <span id="X3Y6Z1" class="stat player3"></span>
+            <span id="X4Y6Z1" class="stat player4"></span>
+        </div>
+
+        <div class="goalpart">
+            <span id="X1Y7Z1" class="stat player1"></span>
+            <span id="X2Y7Z1" class="stat player2"></span>
+            <span id="X3Y7Z1" class="stat player3"></span>
+            <span id="X4Y7Z1" class="stat player4"></span>
+        </div>
+    </div>
+
+    <div class="rightstats">
+        <span id="player5name" class="stat name player1"></span>
+        <span id="player6name" class="stat name player2"></span>
+        <span id="player7name" class="stat name player3"></span>
+        <span id="player8name" class="stat name player4"></span>
+
+        <div class="games">
+            <span id="X1Y1Z2" class="stat player1"></span>
+            <span id="X2Y1Z2" class="stat player2"></span>
+            <span id="X3Y1Z2" class="stat player3"></span>
+            <span id="X4Y1Z2" class="stat player4"></span>
+        </div>
+
+        <div class="goals">
+            <span id="X1Y2Z2" class="stat player1"></span>
+            <span id="X2Y2Z2" class="stat player2"></span>
+            <span id="X3Y2Z2" class="stat player3"></span>
+            <span id="X4Y2Z2" class="stat player4"></span>
+        </div>
+
+        <div class="assists">
+            <span id="X1Y3Z2" class="stat player1"></span>
+            <span id="X2Y3Z2" class="stat player2"></span>
+            <span id="X3Y3Z2" class="stat player3"></span>
+            <span id="X4Y3Z2" class="stat player4"></span>
+        </div>
+
+        <div class="saves">
+            <span id="X1Y4Z2" class="stat player1"></span>
+            <span id="X2Y4Z2" class="stat player2"></span>
+            <span id="X3Y4Z2" class="stat player3"></span>
+            <span id="X4Y4Z2" class="stat player4"></span>
+        </div>
+
+        <div class="shots">
+            <span id="X1Y5Z2" class="stat player1"></span>
+            <span id="X2Y5Z2" class="stat player2"></span>
+            <span id="X3Y5Z2" class="stat player3"></span>
+            <span id="X4Y5Z2" class="stat player4"></span>
+        </div>
+
+        <div class="wins">
+            <span id="X1Y6Z2" class="stat player1"></span>
+            <span id="X2Y6Z2" class="stat player2"></span>
+            <span id="X3Y6Z2" class="stat player3"></span>
+            <span id="X4Y6Z2" class="stat player4"></span>
+        </div>
+
+        <div class="goalpart">
+            <span id="X1Y7Z2" class="stat player1"></span>
+            <span id="X2Y7Z2" class="stat player2"></span>
+            <span id="X3Y7Z2" class="stat player3"></span>
+            <span id="X4Y7Z2" class="stat player4"></span>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="Updater.js"></script>
+    <script src="regex-operation.js"></script>
+    <script>
+        //define settings to use
+        const settings = {
+            'string' : {
+                'I2' : 'leftname',
+                'I3' : 'rightname',
+                'B11' : 'player1name',
+                'C11' : 'player2name',
+                'D11' : 'player3name',
+                'E11' : 'player4name',
+
+                'G11' : 'player5name',
+                'H11' : 'player6name',
+                'I11' : 'player7name',
+                'J11' : 'player8name',
+
+                'B12' : 'X1Y1Z1',
+                'C12' : 'X2Y1Z1',
+                'D12' : 'X3Y1Z1',
+                'E12' : 'X4Y1Z1',
+                'B13' : 'X1Y2Z1',
+                'C13' : 'X2Y2Z1',
+                'D13' : 'X3Y2Z1',
+                'E13' : 'X4Y2Z1',
+                'B14' : 'X1Y3Z1',
+                'C14' : 'X2Y3Z1',
+                'D14' : 'X3Y3Z1',
+                'E14' : 'X4Y3Z1',
+                'B15' : 'X1Y4Z1',
+                'C15' : 'X2Y4Z1',
+                'D15' : 'X3Y4Z1',
+                'E15' : 'X4Y4Z1',
+                'B16' : 'X1Y5Z1',
+                'C16' : 'X2Y5Z1',
+                'D16' : 'X3Y5Z1',
+                'E16' : 'X4Y5Z1',
+                'B17' : 'X1Y6Z1',
+                'C17' : 'X2Y6Z1',
+                'D17' : 'X3Y6Z1',
+                'E17' : 'X4Y6Z1',
+                'B18' : 'X1Y7Z1',
+                'C18' : 'X2Y7Z1',
+                'D18' : 'X3Y7Z1',
+                'E18' : 'X4Y7Z1',
+
+
+                'G12' : 'X1Y1Z2',
+                'H12' : 'X2Y1Z2',
+                'I12' : 'X3Y1Z2',
+                'J12' : 'X4Y1Z2',
+                'G13' : 'X1Y2Z2',
+                'H13' : 'X2Y2Z2',
+                'I13' : 'X3Y2Z2',
+                'J13' : 'X4Y2Z2',
+                'G14' : 'X1Y3Z2',
+                'H14' : 'X2Y3Z2',
+                'I14' : 'X3Y3Z2',
+                'J14' : 'X4Y3Z2',
+                'G15' : 'X1Y4Z2',
+                'H15' : 'X2Y4Z2',
+                'I15' : 'X3Y4Z2',
+                'J15' : 'X4Y4Z2',
+                'G16' : 'X1Y5Z2',
+                'H16' : 'X2Y5Z2',
+                'I16' : 'X3Y5Z2',
+                'J16' : 'X4Y5Z2',
+                'G17' : 'X1Y6Z2',
+                'H17' : 'X2Y6Z2',
+                'I17' : 'X3Y6Z2',
+                'J17' : 'X4Y6Z2',
+                'G18' : 'X1Y7Z2',
+                'H18' : 'X2Y7Z2',
+                'I18' : 'X3Y7Z2',
+                'J18' : 'X4Y7Z2',
+
+            },
+            "image": {
+                'J2' : 'leftlogo',
+                'J3' : 'rightlogo'
+            }
+        };
+
+
+
+        //define spreadsheet
+        const spreadsheetID = '1BggAR3x3zItkq_RwmpTxr8cnRxmB56itbMa7TjDlYdg';
+
+        //select worksheet
+        const worksheetName = 'PlayerStatsOutput';
+
+        //specify api key
+        const apiKey = 'AIzaSyCrkaECJlh4thEpxSrJ61LNG9ahv7OVEtA';
+
+        //update inteval every 3 seconds
+        const updateInterval = 3000;
+
+        const u = new GraphicsUpdater(settings, spreadsheetID, worksheetName, apiKey, updateInterval, false);
+
+        //import operation preset
+        u.addOperation('regex', regexOperation);
+
+        //start updating u
+        u.startUpdating();
+    </script>
+</body>
+</html>

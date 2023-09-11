@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img id="back" src="ModularPieces/thingy.png">
+    <img id="left1" class="teamLogo left" src="">
+    <img id="left2" class="teamLogo right" src="">
+    <img id="right1" class="teamLogo left" src="">
+    <img id="right2" class="teamLogo right" src="">
+    <span id="score1"></span>
+    <span id="score2"></span>
+
+    <script src="Updater.js"></script>
+    <script src="regex-operation.js"></script>
+    <script>
+        //define settings to use
+        const settings = {
+            'string' : {
+                'AH2' : 'score1',
+                'AH3' : 'score2'
+            },
+            "image": {
+                'AF2' : 'left1',
+                'AF3' : 'right1',
+                'AF4' : 'left2',
+                'AF5' : 'right2'
+            }
+        };
+
+
+
+        //define spreadsheet
+        const spreadsheetID = '1BggAR3x3zItkq_RwmpTxr8cnRxmB56itbMa7TjDlYdg';
+
+        //select worksheet
+        const worksheetName = 'Output';
+
+        //specify api key
+        const apiKey = 'AIzaSyCrkaECJlh4thEpxSrJ61LNG9ahv7OVEtA';
+
+        //update inteval every 10 seconds
+        const updateInterval = 10000;
+
+        const u = new GraphicsUpdater(settings, spreadsheetID, worksheetName, apiKey, updateInterval, false);
+
+        //import operation preset
+        u.addOperation('regex', regexOperation);
+
+        //start updating u
+        u.startUpdating();
+    </script>
+</body>
+</html>

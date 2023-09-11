@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Playoffs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="back">
+        <img style="position:absolute; top:0; left:0;" id="Prospect" src="ModularPieces/prospect.png">
+        <img style="position:absolute; top:0; left:0;" id="Challenger" src="ModularPieces/challenger.png">
+        <img style="position:absolute; top:0; left:0;" id="Elite" src="ModularPieces/elite.png">
+        <img style="position:absolute; top:0; left:0;" id="Rival" src="ModularPieces/rival.png">
+        <img style="position:absolute; top:0; left:0;" id="Master" src="ModularPieces/master.png">
+        <img style="position:absolute; top:0; left:0;" id="Premier" src="ModularPieces/premier.png">
+    </div>
+
+    <img style="position:absolute; top:0; left:0;" id="Sponsors" src="ModularPieces/coolpeople.png">
+
+    <div class="colours">
+        <div id="colourM7A" style="width: 50px; height: 50px; position:absolute; left: 380px; top: 648px;"></div>
+        <div id="colourM7B" style="width: 50px; height: 51px; position:absolute; left: 380px; top: 714px;"></div>
+        <div id="colourM8A" style="width: 50px; height: 50px; position:absolute; left: 380px; top: 804px;"></div>
+        <div id="colourM8B" style="width: 50px; height: 51px; position:absolute; left: 380px; top: 870px;"></div>
+        <div id="colourM9A" style="width: 50px; height: 51px; position:absolute; left: 380px; top: 236px;"></div>
+        <div id="colourM9B" style="width: 50px; height: 50px; position:absolute; left: 380px; top: 302px;"></div>
+        <div id="colourM10A" style="width: 50px; height: 51px; position:absolute; left: 380px; top: 392px;"></div>
+        <div id="colourM10B" style="width: 50px; height: 50px; position:absolute; left: 380px; top: 458px;"></div>
+        <div id="colourM11A" style="width: 50px; height: 51px; position:absolute; left: 836px; top: 648px;"></div>
+        <div id="colourM11B" style="width: 50px; height: 51px; position:absolute; left: 836px; top: 714px;"></div>
+        <div id="colourM12A" style="width: 50px; height: 51px; position:absolute; left: 836px; top: 804px;"></div>
+        <div id="colourM12B" style="width: 50px; height: 51px; position:absolute; left: 836px; top: 870px;"></div>
+        <div id="colourM13A" style="width: 50px; height: 51px; position:absolute; left: 1102px; top: 314px;"></div>
+        <div id="colourM13B" style="width: 50px; height: 51px; position:absolute; left: 1102px; top: 380px;"></div>
+        <div id="colourM14A" style="width: 50px; height: 51px; position:absolute; left: 1291px; top: 726px;"></div>
+        <div id="colourM14B" style="width: 50px; height: 51px; position:absolute; left: 1291px; top: 792px;"></div>
+        <div id="colourM15A" style="width: 50px; height: 51px; position:absolute; left: 1745px; top: 726px;"></div>
+        <div id="colourM15B" style="width: 50px; height: 51px; position:absolute; left: 1745px; top: 792px;"></div>
+        <div id="colourM16A" style="width: 50px; height: 51px; position:absolute; left: 1795px; top: 460px;"></div>
+        <div id="colourM16B" style="width: 50px; height: 50px; position:absolute; left: 1795px; top: 526px;"></div>
+    </div>
+
+<!--    all the words are +7px down from the ps file backing and 55 to the left-->
+
+    <div class="teamsandlogos">
+        <span id="teamM7A" class="teamnames" style="position:absolute; top:655px; left:79px;"></span>
+        <span id="teamM7B" class="teamnames" style="position:absolute; top:721px; left:79px;"></span>
+        <span id="teamM8A" class="teamnames" style="position:absolute; top:811px; left:79px;"></span>
+        <span id="teamM8B" class="teamnames" style="position:absolute; top:877px; left:79px;"></span>
+        <span id="teamM9A" class="teamnames" style="position:absolute; top:243px; left:79px;"></span>
+        <span id="teamM9B" class="teamnames" style="position:absolute; top:309px; left:79px;"></span>
+        <span id="teamM10A" class="teamnames" style="position:absolute; top:399px; left:79px;"></span>
+        <span id="teamM10B" class="teamnames" style="position:absolute; top:465px; left:79px;"></span>
+        <span id="teamM11A" class="teamnames" style="position:absolute; top:655px; left:535px;"></span>
+        <span id="teamM11B" class="teamnames" style="position:absolute; top:721px; left:535px;"></span>
+        <span id="teamM12A" class="teamnames" style="position:absolute; top:813px; left:535px;"></span>
+        <span id="teamM12B" class="teamnames" style="position:absolute; top:877px; left:535px;"></span>
+        <span id="teamM13A" class="teamnames" style="position:absolute; top:321px; left:801px;"></span>
+        <span id="teamM13B" class="teamnames" style="position:absolute; top:387px; left:801px;"></span>
+        <span id="teamM14A" class="teamnames" style="position:absolute; top:733px; left:990px;"></span>
+        <span id="teamM14B" class="teamnames" style="position:absolute; top:799px; left:990px;"></span>
+        <span id="teamM15A" class="teamnames" style="position:absolute; top:733px; left:1444px;"></span>
+        <span id="teamM15B" class="teamnames" style="position:absolute; top:799px; left:1444px;"></span>
+        <span id="teamM16A" class="teamnames" style="position:absolute; top:467px; left:1494px;"></span>
+        <span id="teamM16B" class="teamnames" style="position:absolute; top:533px; left:1494px;"></span>
+        <img src="" id="logoM7A" style="position:absolute; top:648px; left:24px; width: 50px; height: 50px">
+        <img src="" id="logoM7B" style="position:absolute; top:714px; left:24px; width: 50px; height: 50px">
+        <img src="" id="logoM8A" style="position:absolute; top:804px; left:24px; width: 50px; height: 50px">
+        <img src="" id="logoM8B" style="position:absolute; top:870px; left:24px; width: 50px; height: 50px">
+        <img src="" id="logoM9A" style="position:absolute; top:236px; left:24px; width: 50px; height: 50px">
+        <img src="" id="logoM9B" style="position:absolute; top:302px; left:24px; width: 50px; height: 50px">
+        <img src="" id="logoM10A" style="position:absolute; top:392px; left:24px; width: 50px; height: 50px">
+        <img src="" id="logoM10B" style="position:absolute; top:458px; left:24px; width: 50px; height: 50px">
+        <img src="" id="logoM11A" style="position:absolute; top:648px; left:480px; width: 50px; height: 50px">
+        <img src="" id="logoM11B" style="position:absolute; top:714px; left:480px; width: 50px; height: 50px">
+        <img src="" id="logoM12A" style="position:absolute; top:806px; left:480px; width: 50px; height: 50px">
+        <img src="" id="logoM12B" style="position:absolute; top:870px; left:480px; width: 50px; height: 50px">
+        <img src="" id="logoM13A" style="position:absolute; top:314px; left:746px; width: 50px; height: 50px">
+        <img src="" id="logoM13B" style="position:absolute; top:380px; left:746px; width: 50px; height: 50px">
+        <img src="" id="logoM14A" style="position:absolute; top:726px; left:935px; width: 50px; height: 50px">
+        <img src="" id="logoM14B" style="position:absolute; top:792px; left:935px; width: 50px; height: 50px">
+        <img src="" id="logoM15A" style="position:absolute; top:726px; left:1389px; width: 50px; height: 50px">
+        <img src="" id="logoM15B" style="position:absolute; top:792px; left:1389px; width: 50px; height: 50px">
+        <img src="" id="logoM16A" style="position:absolute; top:460px; left:1439px; width: 50px; height: 50px">
+        <img src="" id="logoM16B" style="position:absolute; top:526px; left:1439px; width: 50px; height: 50px">
+    </div>
+
+    <div class="scoresdiv">
+        <span id="scoresM7A" class="scores" style="position:absolute; left: 380px; top: 655px;"></span>
+        <span id="scoresM7B" class="scores" style="position:absolute; left: 380px; top: 721px;"></span>
+        <span id="scoresM8A" class="scores" style="position:absolute; left: 380px; top: 811px;"></span>
+        <span id="scoresM8B" class="scores" style="position:absolute; left: 380px; top: 877px;"></span>
+        <span id="scoresM9A" class="scores" style="position:absolute; left: 380px; top: 243px;"></span>
+        <span id="scoresM9B" class="scores" style="position:absolute; left: 380px; top: 309px;"></span>
+        <span id="scoresM10A" class="scores" style="position:absolute; left: 380px; top: 399px;"></span>
+        <span id="scoresM10B" class="scores" style="position:absolute; left: 380px; top: 465px;"></span>
+        <span id="scoresM11A" class="scores" style="position:absolute; left: 836px; top: 655px;"></span>
+        <span id="scoresM11B" class="scores" style="position:absolute; left: 836px; top: 721px;"></span>
+        <span id="scoresM12A" class="scores" style="position:absolute; left: 836px; top: 811px;"></span>
+        <span id="scoresM12B" class="scores" style="position:absolute; left: 836px; top: 877px;"></span>
+        <span id="scoresM13A" class="scores" style="position:absolute; left: 1102px; top: 321px;"></span>
+        <span id="scoresM13B" class="scores" style="position:absolute; left: 1102px; top: 387px;"></span>
+        <span id="scoresM14A" class="scores" style="position:absolute; left: 1291px; top: 733px;"></span>
+        <span id="scoresM14B" class="scores" style="position:absolute; left: 1291px; top: 799px;"></span>
+        <span id="scoresM15A" class="scores" style="position:absolute; left: 1745px; top: 733px;"></span>
+        <span id="scoresM15B" class="scores" style="position:absolute; left: 1745px; top: 799px;"></span>
+        <span id="scoresM16A" class="scores" style="position:absolute; left: 1795px; top: 467px;"></span>
+        <span id="scoresM16B" class="scores" style="position:absolute; left: 1795px; top: 533px;"></span>
+    </div>
+
+
+    <script src="Updater.js"></script>
+    <script src="regex-operation.js"></script>
+    <script>
+        //define settings to use
+        const settings = {
+            'string' : {
+                'AE6' : 'teamM7A',
+                'AE7' : 'teamM7B',
+                'AE8' : 'teamM8A',
+                'AE9' : 'teamM8B',
+                'AE2' : 'teamM9A',
+                'AE3' : 'teamM9B',
+                'AE4' : 'teamM10A',
+                'AE5' : 'teamM10B',
+                'AE10' : 'teamM11A',
+                'AE11' : 'teamM11B',
+                'AE12' : 'teamM12A',
+                'AE13' : 'teamM12B',
+                'AE14' : 'teamM13A',
+                'AE15' : 'teamM13B',
+                'AE16' : 'teamM14A',
+                'AE17' : 'teamM14B',
+                'AE18' : 'teamM15A',
+                'AE19' : 'teamM15B',
+                'AE20' : 'teamM16A',
+                'AE21' : 'teamM16B',
+                'AF6' : 'scoresM7A',
+                'AF7' : 'scoresM7B',
+                'AF8' : 'scoresM8A',
+                'AF9' : 'scoresM8B',
+                'AF2' : 'scoresM9A',
+                'AF3' : 'scoresM9B',
+                'AF4' : 'scoresM10A',
+                'AF5' : 'scoresM10B',
+                'AF10' : 'scoresM11A',
+                'AF11' : 'scoresM11B',
+                'AF12' : 'scoresM12A',
+                'AF13' : 'scoresM12B',
+                'AF14' : 'scoresM13A',
+                'AF15' : 'scoresM13B',
+                'AF16' : 'scoresM14A',
+                'AF17' : 'scoresM14B',
+                'AF18' : 'scoresM15A',
+                'AF19' : 'scoresM15B',
+                'AF20' : 'scoresM16A',
+                'AF21' : 'scoresM16B'
+            },
+            "image": {
+                'AI6' : 'logoM7A',
+                'AI7' : 'logoM7B',
+                'AI8' : 'logoM8A',
+                'AI9' : 'logoM8B',
+                'AI2' : 'logoM9A',
+                'AI3' : 'logoM9B',
+                'AI4' : 'logoM10A',
+                'AI5' : 'logoM10B',
+                'AI10' : 'logoM11A',
+                'AI11' : 'logoM11B',
+                'AI12' : 'logoM12A',
+                'AI13' : 'logoM12B',
+                'AI14' : 'logoM13A',
+                'AI15' : 'logoM13B',
+                'AI16' : 'logoM14A',
+                'AI17' : 'logoM14B',
+                'AI18' : 'logoM15A',
+                'AI19' : 'logoM15B',
+                'AI20' : 'logoM16A',
+                'AI21' : 'logoM16B'
+            },
+            "division":{
+                'L2' : 'tier'
+            },
+            "colours":{
+                'AG6' : 'colourM7A',
+                'AG7' : 'colourM7B',
+                'AG8' : 'colourM8A',
+                'AG9' : 'colourM8B',
+                'AG2' : 'colourM9A',
+                'AG3' : 'colourM9B',
+                'AG4' : 'colourM10A',
+                'AG5' : 'colourM10B',
+                'AG10' : 'colourM11A',
+                'AG11' : 'colourM11B',
+                'AG12' : 'colourM12A',
+                'AG13' : 'colourM12B',
+                'AG14' : 'colourM13A',
+                'AG15' : 'colourM13B',
+                'AG16' : 'colourM14A',
+                'AG17' : 'colourM14B',
+                'AG18' : 'colourM15A',
+                'AG19' : 'colourM15B',
+                'AG20' : 'colourM16A',
+                'AG21' : 'colourM16B'
+            }
+        };
+
+
+
+        //define spreadsheet
+        const spreadsheetID = '1BggAR3x3zItkq_RwmpTxr8cnRxmB56itbMa7TjDlYdg';
+
+        //select worksheet
+        const worksheetName = 'PlayOffOutput';
+
+        //specify api key
+        const apiKey = 'AIzaSyCrkaECJlh4thEpxSrJ61LNG9ahv7OVEtA';
+
+        //update inteval every 3 seconds
+        const updateInterval = 3000;
+
+        const u = new GraphicsUpdater(settings, spreadsheetID, worksheetName, apiKey, updateInterval, false);
+
+        //import operation preset
+        u.addOperation('regex', regexOperation);
+
+        //start updating u
+        u.startUpdating();
+    </script>
+</body>
+</html>
