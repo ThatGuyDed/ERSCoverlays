@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <span id="scrolling-text">
+    </span>
+
+<script>
+    window.onload = function() {
+        setTimeout(function() {
+            var scrollingText = document.getElementById("scrolling-text");
+            var scrollHeight = scrollingText.scrollHeight;
+            var count = 0;
+            function scrollToBottom() {
+                if (count == 0)
+                    if (scrollingText.scrollTop != scrollHeight) {
+                        scrollingText.scrollTop += 1;
+                        setTimeout(scrollToBottom, 15);
+                    }else{
+                        count = 1
+                    }
+            }
+            scrollToBottom()
+
+        }, 3000);
+    };
+</script>
+
+<script src="Updater.js"></script>
+    <script src="regex-operation.js"></script>
+    <script>
+        //define settings to use
+        const settings = {
+            'string' : {
+                'AC2' : 'scrolling-text'
+            }
+        };
+
+
+
+        //define spreadsheet
+        const spreadsheetID = '1B1Twd3-roRogcuRg3oW7Q97XwDqDwGQpcFxjDUD0eSU';
+
+        //select worksheet
+        const worksheetName = 'Output';
+
+        //specify api key
+        const apiKey = 'AIzaSyASSy3E-sz7GhcO9qUHdKtx8lr03dRhYtM';
+
+        //update inteval every 3 seconds
+        const updateInterval = 3000;
+
+        const u = new GraphicsUpdater(settings, spreadsheetID, worksheetName, apiKey, updateInterval, false);
+
+        //import operation preset
+        u.addOperation('regex', regexOperation);
+
+        //start updating u
+        u.startUpdating();
+    </script>
+</body>
+</html>
