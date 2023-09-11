@@ -1,0 +1,254 @@
+@font-face {
+    font-family: "MadeTommyBold";
+    src: url("fonts/MadeTommyBold.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyReg";
+    src: url("fonts/MadeTommyRegular.otf");
+}
+
+body{
+
+}
+
+#back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
+    z-index: -1;
+}
+
+#teamleft{
+    position: absolute;
+    left: 513px;
+    top: 22px;
+    width: 91px;
+    height: 91px;
+}
+
+#teamright{
+    position: absolute;
+    left: 1316px;
+    top: 22px;
+    width: 91px;
+    height: 91px;
+}
+
+#teamnameleft{
+    position: absolute;
+    left: 2px;
+    top: 25px;
+    width: 420px;
+    height: 67px;
+    font-size: 40px;
+    font-family: MadeTommyBold;
+    text-align: center;
+    color: white;
+}
+
+#teamnameright{
+    position: absolute;
+    right: 2px;
+    top: 25px;
+    width: 420px;
+    height: 67px;
+    font-size: 40px;
+    font-family: MadeTommyBold;
+    text-align: center;
+    color: white;
+}
+
+#recordleft{
+    position: absolute;
+    left: 2px;
+    top: 80px;
+    width: 420px;
+    height: 67px;
+    font-size: 30px;
+    font-family: MadeTommyBold;
+    text-align: center;
+    color: white;
+}
+
+#recordright{
+    position: absolute;
+    right: 2px;
+    top: 80px;
+    width: 420px;
+    height: 67px;
+    font-size: 30px;
+    font-family: MadeTommyBold;
+    text-align: center;
+    color: white;
+}
+
+#winsleft{
+    position: absolute;
+    top: 233px;
+    left: 510px;
+    width: 250px;
+    height: 82px;
+    text-align: center;
+    color: white;
+    font-family: MadeTommyBold;
+    font-size: 60px;
+}
+
+#winsright{
+    position: absolute;
+    top: 233px;
+    right: 510px;
+    width: 250px;
+    height: 82px;
+    text-align: center;
+    color: white;
+    font-family: MadeTommyBold;
+    font-size: 60px;
+}
+
+#lossesleft{
+    position: absolute;
+    top: 341px;
+    left: 510px;
+    width: 250px;
+    height: 82px;
+    text-align: center;
+    color: white;
+    font-family: MadeTommyBold;
+    font-size: 60px;
+}
+
+#lossesright{
+    position: absolute;
+    top: 341px;
+    right: 510px;
+    width: 250px;
+    height: 82px;
+    text-align: center;
+    color: white;
+    font-family: MadeTommyBold;
+    font-size: 60px;
+}
+
+#goalsforleft{
+    position: absolute;
+    top: 449px;
+    left: 510px;
+    width: 250px;
+    height: 82px;
+    text-align: center;
+    color: white;
+    font-family: MadeTommyBold;
+    font-size: 60px;
+}
+
+#goalsforright{
+    position: absolute;
+    top: 449px;
+    right: 510px;
+    width: 250px;
+    height: 82px;
+    text-align: center;
+    color: white;
+    font-family: MadeTommyBold;
+    font-size: 60px;
+}
+
+#goalsagainstleft{
+    position: absolute;
+    top: 557px;
+    left: 510px;
+    width: 250px;
+    height: 82px;
+    text-align: center;
+    color: white;
+    font-family: MadeTommyBold;
+    font-size: 60px;
+}
+
+#goalsagainstright{
+    position: absolute;
+    top: 557px;
+    right: 510px;
+    width: 250px;
+    height: 82px;
+    text-align: center;
+    color: white;
+    font-family: MadeTommyBold;
+    font-size: 60px;
+}
+
+#savesleft{
+    position: absolute;
+    top: 664px;
+    left: 510px;
+    width: 250px;
+    height: 82px;
+    text-align: center;
+    color: white;
+    font-family: MadeTommyBold;
+    font-size: 60px;
+}
+
+#savesright{
+    position: absolute;
+    top: 664px;
+    right: 510px;
+    width: 250px;
+    height: 82px;
+    text-align: center;
+    color: white;
+    font-family: MadeTommyBold;
+    font-size: 60px;
+}
+
+#demosleft{
+    position: absolute;
+    top: 772px;
+    left: 510px;
+    width: 250px;
+    height: 82px;
+    text-align: center;
+    color: white;
+    font-family: MadeTommyBold;
+    font-size: 60px;
+}
+
+#demosright{
+    position: absolute;
+    top: 772px;
+    right: 510px;
+    width: 250px;
+    height: 82px;
+    text-align: center;
+    color: white;
+    font-family: MadeTommyBold;
+    font-size: 60px;
+}
+
+#shootingleft{
+    position: absolute;
+    top: 880px;
+    left: 510px;
+    width: 250px;
+    height: 82px;
+    text-align: center;
+    color: white;
+    font-family: MadeTommyBold;
+    font-size: 60px;
+}
+
+#shootingright{
+    position: absolute;
+    top: 880px;
+    right: 510px;
+    width: 250px;
+    height: 82px;
+    text-align: center;
+    color: white;
+    font-family: MadeTommyBold;
+    font-size: 60px;
+}

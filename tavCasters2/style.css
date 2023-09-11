@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "MadeTommyBlack";
+    src: url("fonts/MadeTommyBlack.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyBold";
+    src: url("fonts/MadeTommyBold.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyExtraBold";
+    src: url("fonts/MadeTommyExtraBold.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyLight";
+    src: url("fonts/MadeTommyLight.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyMedium";
+    src: url("fonts/MadeTommyMedium.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyRegular";
+    src: url("fonts/MadeTommyRegular.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyThin";
+    src: url("fonts/MadeTommyThin.otf");
+}
+
+#back{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 1920px;
+    height: 1080px;
+    z-index: -1;
+}
+
+.castername{
+    font-family: MadeTommyBold;
+    text-align: center;
+    font-size: 33px;
+    color: white;
+    width: 362px;
+    height: 40px;
+    z-index: 1;
+}
+
+.castertwitter{
+    font-family: MadeTommyBold;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    width: 362px;
+    height: 25px;
+    z-index: 1;
+    opacity: 90%;
+}
+
+#caster1name{
+    position: absolute;
+    top: 626px;
+    left: 318px;
+}
+
+#caster2name{
+    position: absolute;
+    top: 626px;
+    left: 1240px;
+}
+
+#caster1twitter{
+    position: absolute;
+    top: 666px;
+    left: 318px;
+}
+
+#caster2twitter{
+    position: absolute;
+    top: 666px;
+    left: 1240px;
+}
+
+#bcname{
+    position: absolute;
+    top: 813px;
+    left: 919px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: MadeTommyBold;
+    font-size: 25px;
+    color: white;
+    width: 160px;
+}
