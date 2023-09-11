@@ -1,0 +1,225 @@
+@font-face {
+    font-family: "ApotekBold";
+    src: url("./fonts/Apotek_Black.otf");
+}
+
+@font-face {
+    font-family: "ApotekMedium";
+    src: url("./fonts/ApotekMedium.otf");
+}
+
+
+@font-face {
+    font-family: "ApotekThin";
+    src: url("./fonts/ApotekLight.otf");
+}
+
+body{
+
+}
+
+.topstuff{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#leftlogo{
+    position: absolute;
+    top: 116px;
+    left: 275px;
+    max-width: 190px;
+    max-height: 190px;
+    z-index: 10;
+}
+
+#rightlogo{
+    position: absolute;
+    top: 116px;
+    left: 1462px;
+    max-width: 190px;
+    max-height: 190px;
+    z-index: 10;
+}
+
+.teamnames{
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 37px;
+    font-family: ApotekMedium;
+    color: white;
+    text-transform: uppercase;
+}
+
+#leftname{
+    position: absolute;
+    top: 76px;
+    left: 758px;
+    z-index: 10;
+    width: 400px;
+    height: 34px;
+    display: block;
+    text-align: center;
+}
+
+#rightname{
+    position: absolute;
+    top: 304px;
+    left: 758px;
+    z-index: 10;
+    width: 400px;
+    height: 34px;
+    display: block;
+    text-align: center;
+}
+
+.leftstats{
+    z-index: 1;
+}
+
+.rightstats{
+    z-index: 1;
+}
+
+#tempback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: auto;
+}
+
+#statsback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: auto;
+}
+
+.stats{
+    display: block;
+    color: white;
+    text-align: center;
+    font-family: ApotekBold;
+    width: 250px;
+    font-size: 50px;
+}
+
+#leftpos{
+    position: absolute;
+    left: var(--left-hoz);
+    top: var(--pos-height);
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+#rightpos{
+    position: absolute;
+    left: var(--right-hoz);
+    top: var(--pos-height);
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+#leftwins{
+    position: absolute;
+    left: var(--left-hoz);
+    top: var(--wins-height);
+}
+
+#leftloss{
+    position: absolute;
+    left: var(--left-hoz);
+    top: var(--loss-height);
+}
+
+#leftgf{
+    position: absolute;
+    left: var(--left-hoz);
+    top: var(--gf-height);
+}
+
+#leftga{
+    position: absolute;
+    left: var(--left-hoz);
+    top: var(--ga-height);
+}
+
+#leftsave{
+    position: absolute;
+    left: var(--left-hoz);
+    top: var(--saves-height);
+}
+
+#leftdemo{
+    position: absolute;
+    left: var(--left-hoz);
+    top: var(--demos-height);
+}
+
+#leftsht{
+    position: absolute;
+    left: var(--left-hoz);
+    top: var(--sht-height);
+}
+
+#rightwins{
+    position: absolute;
+    left: var(--right-hoz);
+    top: var(--wins-height);
+}
+
+#rightloss{
+    position: absolute;
+    left: var(--right-hoz);
+    top: var(--loss-height);
+}
+
+#rightgf{
+    position: absolute;
+    left: var(--right-hoz);
+    top: var(--gf-height);
+}
+
+#rightga{
+    position: absolute;
+    left: var(--right-hoz);
+    top: var(--ga-height);
+}
+
+#rightsave{
+    position: absolute;
+    left: var(--right-hoz);
+    top: var(--saves-height);
+}
+
+#rightdemo{
+    position: absolute;
+    left: var(--right-hoz);
+    top: var(--demos-height);
+}
+
+#rightsht{
+    position: absolute;
+    left: var(--right-hoz);
+    top: var(--sht-height);
+}
+
+
+:root{
+    --pos-height: 400px;
+    --wins-height: 485px;
+    --loss-height: 558px;
+    --gf-height: 633px;
+    --ga-height: 706px;
+    --saves-height: 781px;
+    --demos-height: 852px;
+    --sht-height: 921px;
+
+    --height-diff: 72px;
+
+    --left-hoz: 243px;
+    --right-hoz: 1431px;
+}

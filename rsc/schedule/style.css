@@ -1,0 +1,161 @@
+@font-face {
+    font-family: "ApotekBold";
+    src: url("./fonts/Apotek_Black.otf");
+}
+
+@font-face {
+    font-family: "ApotekMedium";
+    src: url("./fonts/ApotekMedium.otf");
+}
+
+
+@font-face {
+    font-family: "ApotekThin";
+    src: url("./fonts/ApotekLight.otf");
+}
+
+body{
+
+}
+
+.logo{
+    max-width: 50px;
+    max-height: 50px;
+    size: auto;
+}
+
+
+/* layer stuff */
+.toplayer{
+    z-index: 1;
+}
+.botlayer{
+    z-index: 0;
+}
+
+.game1{
+    position: absolute;
+    top: 217px;
+    left: 456px;
+}
+
+.game3{
+    position: absolute;
+    top: 741px;
+    left: 456px;
+}
+
+.game2{
+    position: absolute;
+    top: 483px;
+    left: 456px;
+}
+
+.leftlogo{
+    position: absolute;
+    top: 0px;
+    left: 2px;
+}
+
+.rightlogo{
+    position: absolute;
+    top: 0px;
+    left: 875px;
+}
+
+.tier{
+    position: absolute;
+    top: 127px;
+    left: 291px;
+    max-width: 428px;
+    max-height: 74px;
+}
+
+.time{
+    display: block;
+    width: 142px;
+    height: 67px;
+    text-align: center;
+    vertical-align: center;
+    position: absolute;
+    left: 440px;
+    top: 42px;
+    color: white;
+    font-family: ApotekBold;
+    font-size: 35px;
+    letter-spacing: 4px;
+}
+
+.name{
+    display: block;
+    width: 701px;
+    height: 67px;
+    text-align: center;
+    vertical-align: center;
+    color: white;
+    font-family: ApotekBold;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.leftname{
+    text-align: left;
+    position: absolute;
+    top: 48px;
+    left: 182px;
+}
+
+.rightname{
+    text-align: right;
+    position: absolute;
+    top: 48px;
+    left: 126px;
+}
+
+.title{
+    display: block;
+    width: 1000px;
+    height: 100px;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 460px;
+    font-family: ApotekBold;
+    text-transform: uppercase;
+    color: white;
+    font-size: 86px;
+}
+
+.subtitle{
+    display: block;
+    width: 750px;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 116px;
+    left: 586px;
+    font-family: ApotekThin;
+    text-transform: uppercase;
+    color: #e10448;
+    font-size: 50px;
+}
+
+.logo{
+    max-width: 129px;
+    max-height: 129px;
+}
+
+#timezone{
+    display: block;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    position: absolute;
+    top: 205px;
+    left: 868px;
+    font-family: ApotekBold;
+    font-size: 24px;
+    letter-spacing: 12px;
+    color: #e10448;
+}
