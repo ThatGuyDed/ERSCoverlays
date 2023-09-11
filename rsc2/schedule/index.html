@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="botlayer">
+<!--        <img src="./ModularPieces/temp.png" style="opacity: 50%; z-index: 2; position: absolute; top: 0px; left: 0px; width: 1920px;">-->
+        <img src="./ModularPieces/background.png">
+    </div>
+    <div class="toplayer">
+        <span id="title" class="title"></span>
+        <span id="subtitle" class="subtitle"></span>
+        <span id="timezone"></span>
+        <div class="game1">
+            <div class="leftTeam">
+                <img src="" id="team1logo" class="leftlogo logo">
+                <span id="team1name" class="leftname name"></span>
+            </div>
+            <div class="rightTeam">
+                <img src="" id="team2logo" class="rightlogo logo">
+                <span id="team2name" class="rightname name"></span>
+            </div>
+            <img src="" id="game1tier" class="tier">
+            <span id="game1time" class="time"></span>
+        </div>
+        <div class="game2">
+            <div class="leftTeam">
+                <img src="" id="team3logo" class="leftlogo logo">
+                <span id="team3name" class="leftname name"></span>
+            </div>
+            <div class="rightTeam">
+                <img src="" id="team4logo" class="rightlogo logo">
+                <span id="team4name" class="rightname name"></span>
+            </div>
+            <img src="" id="game2tier" class="tier">
+            <span id="game2time" class="time"></span>
+        </div>
+        <div class="game3">
+            <div class="leftTeam">
+                <img src="" id="team5logo" class="leftlogo logo">
+                <span id="team5name" class="leftname name"></span>
+            </div>
+            <div class="rightTeam">
+                <img src="" id="team6logo" class="rightlogo logo">
+                <span id="team6name" class="rightname name"></span>
+            </div>
+            <img src="" id="game3tier" class="tier">
+            <span id="game3time" class="time"></span>
+        </div>
+    </div>
+    <script src="Updater.js"></script>
+    <script src="regex-operation.js"></script>
+    <script>
+        //define settings to use
+        const settings = {
+            'string' : {
+                'W2' : 'team1name',
+                'W3' : 'team2name',
+                'W4' : 'team3name',
+                'W5' : 'team4name',
+                'W6' : 'team5name',
+                'W7' : 'team6name',
+                'AA2' : 'game1time',
+                'AA3' : 'game2time',
+                'AA4' : 'game3time',
+                'AB2' : 'title',
+                'AB3' : 'subtitle',
+                'Z2' : 'timezone'
+            },
+            "image": {
+                'K2' : 'team1logo',
+                'K3' : 'team2logo',
+                'K4' : 'team3logo',
+                'K5' : 'team4logo',
+                'K6' : 'team5logo',
+                'K7' : 'team6logo',
+                'M2' : 'game1tier',
+                'M3' : 'game2tier',
+                'M4' : 'game3tier'
+
+            }
+        };
+
+
+
+        //define spreadsheet
+        const spreadsheetID = '1ykZTMH8hR-_PcPym2qROkcYSTyhmE4IPo3uIwuEuj5c';
+
+        //select worksheet
+        const worksheetName = 'Output';
+
+        //specify api key
+        const apiKey = 'AIzaSyCbUMvJrq3vI9-zFitXEnF4DDV1FIqhFZ4';
+
+        //update inteval every 3 seconds
+        const updateInterval = 3000;
+
+        const u = new GraphicsUpdater(settings, spreadsheetID, worksheetName, apiKey, updateInterval, false);
+
+        //import operation preset
+        u.addOperation('regex', regexOperation);
+
+        //start updating u
+        u.startUpdating();
+    </script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+@font-face {
+    font-family: "ApotekBold";
+    src: url("./fonts/Apotek_Black.otf");
+}
+
+@font-face {
+    font-family: "ApotekMedium";
+    src: url("./fonts/ApotekMedium.otf");
+}
+
+
+@font-face {
+    font-family: "ApotekThin";
+    src: url("./fonts/ApotekLight.otf");
+}
+
+body{
+
+}
+/*stats n shit*/
+
+.logo{
+    max-width: 80px;
+    max-height: 80px;
+}
+.text{
+    display: block;
+    width: 150px;
+    max-height: 40px;
+    text-align: center;
+    font-family: ApotekMedium;
+    color: white;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+.wintext{
+    display: block;
+    width: 150px;
+    max-height: 50px;
+    text-align: center;
+    font-family: ApotekBold;
+    color: #141d24;
+    font-size: 45px;
+    position: absolute;
+}
+.teamtext{
+    display: block;
+    width: 460px;
+    max-height: 30px;
+    text-align: left;
+    font-family: ApotekMedium;
+    text-transform: uppercase;
+    color: white;
+    font-size: 36px;
+}
+
+.teamnames{
+    position: absolute;
+    left: 264px;
+}
+.played{
+    position: absolute;
+    left: 754px;
+}
+.winper{
+    position: absolute;
+    left: 920px;
+}
+.goalsfor{
+    position: absolute;
+    left: 1085px;
+}
+.goalsagainst{
+    position: absolute;
+    left: 1252px;
+}
+.goaldiff{
+    position: absolute;
+    left: 1415px;
+}
+.wins{
+    position: absolute;
+    left: 1615px;
+    top: -7px;
+}
+.teamlogos{
+    position: absolute;
+    left: 153px;
+    top: -17px;
+}
+.team1{
+    position: absolute;
+    top: 349px;
+}
+.team2{
+    position: absolute;
+    top: 418px;
+}
+.team3{
+    position: absolute;
+    top: 485px;
+}
+.team4{
+    position: absolute;
+    top: 555px;
+}
+.team5{
+    position: absolute;
+    top: 624px;
+}
+.team6{
+    position: absolute;
+    top: 692px;
+}
+.team7{
+    position: absolute;
+    top: 760px;
+}
+.team8{
+    position: absolute;
+    top: 830px;
+}
+.team9{
+    position: absolute;
+    top: 898px;
+}
+.team10{
+    position: absolute;
+    top: 967px;
+}
+
+/*z-indexing*/
+.backgroundImages{
+    z-index: 0;
+}
+.frontstats{
+    z-index: 1;
+    position: absolute;
+    top: 8px;
+}
+
+/*background shit*/
+#backimage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+}
+#tempback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    opacity: 50%;
+}
+#topimage{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#conference{
+    position: absolute;
+    top: 193px;
+    left: 454px;
+    width: 235px;
+    height: auto;
+}
+
+#toptext{
+    position: absolute;
+    top: 93px;
+    left: 460px;
+    display: block;
+    width: 1000px;
+    text-align: center;
+    z-index: 5;
+    font-family: ApotekMedium;
+    color: #090c0f;
+    font-size: 45px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+/*variable root*/
+:root{
+
+}

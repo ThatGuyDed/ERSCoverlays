@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "Apotek";
+    src: url("fonts/Apotek_Black.otf");
+}
+
+body{
+    position: absolute;
+    top: 0;
+    left: -10px;
+}
+
+.teamLogo{
+    max-width: 70px;
+    max-height: 70px;
+}
+
+#score1{
+    width: 100px;
+    height: 32px;
+    position: absolute;
+    top: 726px;
+    left: 732px;
+    text-align: center;
+    font-family: Apotek;
+    font-size: 30px;
+    color: white;
+}
+
+#score2{
+    width: 100px;
+    height: 32px;
+    position: absolute;
+    top: 726px;
+    left: 1111px;
+    text-align: center;
+    font-family: Apotek;
+    font-size: 30px;
+    color: white;
+}
+
+#left1{
+    position: absolute;
+    top: 704px;
+    left: 664px;
+}
+
+#right1{
+    position: absolute;
+    top: 704px;
+    left: 827px;
+}
+
+#left2{
+    position: absolute;
+    top: 704px;
+    left: 1044px;
+}
+
+#right2{
+    position: absolute;
+    top: 704px;
+    left: 1206px;
+}
+
+#back{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 1920px;
+    height: 1080px;
+}
