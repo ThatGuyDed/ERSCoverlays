@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img src="ModularPieces/playerstats.png" id="back">
+    <img src="" id="teamleft">
+    <img src="" id="teamright">
+
+    <span id="teamnameleft">XXX</span>
+    <span id="teamnameright">XXX</span>
+    <span id="recordleft">xxx</span>
+    <span id="recordright">xxx</span>
+
+    <span id="player1" class="text name p1"></span>
+    <span id="player2" class="text name p2"></span>
+    <span id="player3" class="text name p3"></span>
+    <span id="player4" class="text name p4"></span>
+    <span id="player5" class="text name p5"></span>
+    <span id="player6" class="text name p6"></span>
+
+    <span id="games1" class="text games p1"></span>
+    <span id="games2" class="text games p2"></span>
+    <span id="games3" class="text games p3"></span>
+    <span id="games4" class="text games p4"></span>
+    <span id="games5" class="text games p5"></span>
+    <span id="games6" class="text games p6"></span>
+
+    <span id="goals1" class="text goals p1"></span>
+    <span id="goals2" class="text goals p2"></span>
+    <span id="goals3" class="text goals p3"></span>
+    <span id="goals4" class="text goals p4"></span>
+    <span id="goals5" class="text goals p5"></span>
+    <span id="goals6" class="text goals p6"></span>
+
+    <span id="assists1" class="text assists p1"></span>
+    <span id="assists2" class="text assists p2"></span>
+    <span id="assists3" class="text assists p3"></span>
+    <span id="assists4" class="text assists p4"></span>
+    <span id="assists5" class="text assists p5"></span>
+    <span id="assists6" class="text assists p6"></span>
+
+    <span id="saves1" class="text saves p1"></span>
+    <span id="saves2" class="text saves p2"></span>
+    <span id="saves3" class="text saves p3"></span>
+    <span id="saves4" class="text saves p4"></span>
+    <span id="saves5" class="text saves p5"></span>
+    <span id="saves6" class="text saves p6"></span>
+
+    <span id="shotp1" class="text shotp p1"></span>
+    <span id="shotp2" class="text shotp p2"></span>
+    <span id="shotp3" class="text shotp p3"></span>
+    <span id="shotp4" class="text shotp p4"></span>
+    <span id="shotp5" class="text shotp p5"></span>
+    <span id="shotp6" class="text shotp p6"></span>
+
+    <span id="winp1" class="text winp p1"></span>
+    <span id="winp2" class="text winp p2"></span>
+    <span id="winp3" class="text winp p3"></span>
+    <span id="winp4" class="text winp p4"></span>
+    <span id="winp5" class="text winp p5"></span>
+    <span id="winp6" class="text winp p6"></span>
+
+    <span id="goalp1" class="text goalp p1"></span>
+    <span id="goalp2" class="text goalp p2"></span>
+    <span id="goalp3" class="text goalp p3"></span>
+    <span id="goalp4" class="text goalp p4"></span>
+    <span id="goalp5" class="text goalp p5"></span>
+    <span id="goalp6" class="text goalp p6"></span>
+
+    <script src="Updater.js"></script>
+    <script src="regex-operation.js"></script>
+    <script>
+        //define settings to use
+        const settings = {
+            'string' : {
+                'AM2' : 'teamnameleft',
+                'AM3' : 'teamnameright',
+                'AU2' : 'recordleft',
+                'AU3' : 'recordright',
+                'AC2' : 'player1',
+                'AC3' : 'player2',
+                'AC4' : 'player3',
+                'AC6' : 'player4',
+                'AC7' : 'player5',
+                'AC8' : 'player6',
+                'AD2' : 'games1',
+                'AD3' : 'games2',
+                'AD4' : 'games3',
+                'AD6' : 'games4',
+                'AD7' : 'games5',
+                'AD8' : 'games6',
+                'AE2' : 'goals1',
+                'AE3' : 'goals2',
+                'AE4' : 'goals3',
+                'AE6' : 'goals4',
+                'AE7' : 'goals5',
+                'AE8' : 'goals6',
+                'AF2' : 'assists1',
+                'AF3' : 'assists2',
+                'AF4' : 'assists3',
+                'AF6' : 'assists4',
+                'AF7' : 'assists5',
+                'AF8' : 'assists6',
+                'AG2' : 'saves1',
+                'AG3' : 'saves2',
+                'AG4' : 'saves3',
+                'AG6' : 'saves4',
+                'AG7' : 'saves5',
+                'AG8' : 'saves6',
+                'AH2' : 'shotp1',
+                'AH3' : 'shotp2',
+                'AH4' : 'shotp3',
+                'AH6' : 'shotp4',
+                'AH7' : 'shotp5',
+                'AH8' : 'shotp6',
+                'AI2' : 'winp1',
+                'AI3' : 'winp2',
+                'AI4' : 'winp3',
+                'AI6' : 'winp4',
+                'AI7' : 'winp5',
+                'AI8' : 'winp6',
+                'AJ2' : 'goalp1',
+                'AJ3' : 'goalp2',
+                'AJ4' : 'goalp3',
+                'AJ6' : 'goalp4',
+                'AJ7' : 'goalp5',
+                'AJ8' : 'goalp6',
+            },
+            "image": {
+                'AK2' : 'teamleft',
+                'AK3' : 'teamright'
+            }
+        };
+
+
+
+        //define spreadsheet
+        const spreadsheetID = '1mcLGEj5AlIWYOuKsoWm_QexjG8EaHdnj2mRhQxS1yaU';
+
+        //select worksheet
+        const worksheetName = 'Output';
+
+        //specify api key
+        const apiKey = 'AIzaSyASSy3E-sz7GhcO9qUHdKtx8lr03dRhYtM';
+
+        //update inteval every 3 seconds
+        const updateInterval = 3000;
+
+        const u = new GraphicsUpdater(settings, spreadsheetID, worksheetName, apiKey, updateInterval, false);
+
+        //import operation preset
+        u.addOperation('regex', regexOperation);
+
+        //start updating u
+        u.startUpdating();
+    </script>
+</body>
+</html>
