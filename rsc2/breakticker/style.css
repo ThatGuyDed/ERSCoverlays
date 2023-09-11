@@ -1,0 +1,243 @@
+
+@font-face {
+    font-family: "ApotekBold";
+    src: url("./fonts/Apotek_Black.otf");
+}
+
+@font-face {
+    font-family: "ApotekMedium";
+    src: url("./fonts/ApotekMedium.otf");
+}
+
+
+@font-face {
+    font-family: "ApotekThin";
+    src: url("./fonts/ApotekLight.otf");
+}
+
+body{
+    color: white;
+    font-size: 30px;
+}
+
+.topdivstuff{
+    z-index: 4;
+}
+
+#topimage{
+    position: absolute;
+    top: -1.5px;
+    left: 0;
+    z-index: 3;
+    width: 1920px;
+    height: auto;
+}
+#botimage{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    width: 1920px;
+    height: auto;
+}
+
+#title{
+    position: absolute;
+    width: 1248px;
+    max-height: 51px;
+    top: 933px;
+    left: 324px;
+    font-size: 47pt;
+    text-align: center;
+    display: block;
+    font-family: ApotekBold;
+    text-transform: uppercase;
+}
+
+.nextteamlogos{
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.teamlogos{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.tierimage{
+    max-width: 242px;
+    max-height: 41px;
+}
+
+.topstuff{
+    position: absolute;
+    top: 254px;
+    left: 0;
+}
+
+.midstuff{
+    position: absolute;
+    top: 510px;
+    left: 0;
+}
+
+.botstuff{
+    position: absolute;
+    top: 766px;
+    left: 0;
+}
+
+.gamescore{
+    position: absolute;
+    top: 99px;
+    left: 107px;
+    width: 73px;
+    display: block;
+    text-align: center;
+    font-family: ApotekBold;
+    font-size: 48px;
+}
+
+.gametime{
+    position: absolute;
+    top: 31px;
+    left: 27px;
+    width: 239px;
+    display: block;
+    text-align: center;
+    font-family: ApotekThin;
+    color: #141d24;
+}
+
+.tierimage{
+    position: absolute;
+    top: 190px;
+    left: 23px;
+}
+
+.teamlogoleft{
+    position: absolute;
+    top: 81px;
+    left: 5px;
+}
+
+.teamlogoright{
+    position: absolute;
+    top: 81px;
+    left: 184px;
+}
+
+#upnextleftlogo{
+    position: absolute;
+    top: 30px;
+    left: 5px;
+}
+
+#upnextrightlogo{
+    position: absolute;
+    top: 30px;
+    left: 242px;
+}
+
+#backin{
+    position: absolute;
+    left: 1664px;
+    width: 250px;
+    top: 935px;
+    display: block;
+    text-align: center;
+    color: white;
+    font-family: ApotekThin;
+    text-transform: uppercase;
+    z-index: 4;
+    font-size: 45px;
+}
+
+#upnextvs{
+    position: absolute;
+    top: 77px;
+    left: 0px;
+    width: 396px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: ApotekBold;
+    font-size: 54px;
+}
+
+#upnexttext{
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    width: 396px;
+    display: block;
+    font-family: ApotekThin;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+
+#tickertime{
+    position: absolute;
+    left: 1664px;
+    top: 930px;
+    width: 250px;
+    font-family: ApotekBold;
+    font-size: 60px;
+    text-align: center;
+    color: #141D24;
+    display: block;
+    letter-spacing: 3px;
+    z-index: 10;
+}
+
+.tickerclass{
+
+}
+
+#ticker{
+    color: white;
+    font-family: ApotekThin;
+}
+
+.marquee-container {
+    height: 30px;
+    overflow: hidden;
+    line-height: 30px;
+}
+
+.marquee {
+    top: 1033px;
+    left: 100%;
+    width: auto;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    animation: marquee linear;
+    animation-timing-function: linear;
+    animation-duration: 240s;
+    animation-iteration-count: infinite;
+}
+
+.marquee2 {
+    animation-delay: 0s;
+}
+.marquee3 {
+    animation-delay: 0s;
+}
+
+b {
+    padding-left: 10px;
+}
+
+
+@keyframes marquee {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -1400%
+    }
+}

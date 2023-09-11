@@ -1,0 +1,229 @@
+@font-face {
+    font-family: "ApotekBold";
+    src: url("./fonts/Apotek_Black.otf");
+}
+
+@font-face {
+    font-family: "ApotekMedium";
+    src: url("./fonts/ApotekMedium.otf");
+}
+
+
+@font-face {
+    font-family: "ApotekThin";
+    src: url("./fonts/ApotekLight.otf");
+}
+
+body{
+    color: white;
+    font-family: ApotekBold;
+}
+
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    width: 1920px;
+}
+
+.leftstats{
+    z-index: 10;
+    position: absolute;
+    top: 426px;
+    left: 1px;
+}
+
+.name{
+    position: absolute;
+    top: 0;
+    color: white;
+    font-size: 30px;
+    font-family: ApotekThin;
+    text-transform: uppercase;
+
+}
+
+.rightstats{
+    z-index: 10;
+    position: absolute;
+    top: 426px;
+    left: 1185px;
+}
+
+.player1{
+    position: absolute;
+    left: 0;
+}
+
+.player2{
+    position: absolute;
+    left: 184px;
+}
+
+.player3{
+    position: absolute;
+    left: 368px;
+}
+
+.player4{
+    position: absolute;
+    left: 552px;
+}
+
+.player5{
+    position: absolute;
+    left: 0;
+}
+
+.player6{
+    position: absolute;
+    left: 184px;
+}
+
+.player7{
+    position: absolute;
+    left: 368px;
+}
+
+.player8{
+    position: absolute;
+    left: 552px;
+}
+
+.topstuff{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#leftlogo{
+    position: absolute;
+    top: 116px;
+    left: 275px;
+    max-width: 190px;
+    max-height: 190px;
+    z-index: 2;
+}
+
+#rightlogo{
+    position: absolute;
+    top: 116px;
+    left: 1458px;
+    max-width: 190px;
+    max-height: 190px;
+    z-index: 2;
+}
+
+.teamnames{
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 37px;
+    font-family: ApotekMedium;
+    color: white;
+    text-transform: uppercase;
+}
+
+.allstats{
+    z-index: 10;
+    font-size: 53px;
+}
+
+.stat{
+    display: block;
+    width: 184px;
+    max-height: 50px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#leftname{
+    position: absolute;
+    top: 76px;
+    left: 763px;
+    z-index: 1;
+    width: 400px;
+    height: 34px;
+    display: block;
+    text-align: center;
+}
+
+#rightname{
+    position: absolute;
+    top: 304px;
+    left: 763px;
+    z-index: 1;
+    width: 400px;
+    height: 34px;
+    display: block;
+    text-align: center;
+}
+
+#tempback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: auto;
+}
+
+#statsback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: auto;
+    z-index: 0;
+}
+
+.games{
+    position: absolute;
+    top: var(--games-height);
+}
+.goals{
+    position: absolute;
+    top: var(--goals-height);
+}
+
+.assists{
+    position: absolute;
+    top: var(--assists-height);
+}
+
+.saves{
+    position: absolute;
+    top: var(--saves-height);
+}
+
+.shots{
+    position: absolute;
+    top: var(--shots-height)
+}
+
+.wins{
+    position: absolute;
+    top: var(--wins-height);
+}
+
+.goalpart{
+    position: absolute;
+    top: var(--goalparts-height);
+}
+
+#sponsors{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+}
+
+:root{
+    --games-height : 56px;
+    --goals-height : 130px;
+    --assists-height : 204px;
+    --saves-height : 278px;
+    --shots-height : 352px;
+    --wins-height : 426px;
+    --goalparts-height : 498px;
+}

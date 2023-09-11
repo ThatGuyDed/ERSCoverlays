@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RSC Caster Screen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--    <img src="ModularPieces/temp.png" style="position:absolute; top:0; left:0; width: 1920px; opacity: 50%; z-index: 100;">-->
+    <div class="botstuff">
+        <img src="ModularPieces/backbot.png" id="backimage">
+        <marquee id="scrolltext"></marquee>
+    </div>
+    <div class="midstuff">
+        <img src="ModularPieces/backtop.png" id="topimage">
+    </div>
+    <div class="topstuff">
+        <div class="scorestuff">
+            <img src="" id="team1logo" class="logo">
+            <img src="" id="team2logo" class="logo">
+            <span id="score"></span>
+        </div>
+        <div class="casterstuff">
+            <span id="caster1name" class="castername cs"></span>
+            <span id="caster1twitter" class="castertwitter cs"></span>
+            <span id="caster2name" class="castername cs"></span>
+            <span id="caster2twitter" class="castertwitter cs"></span>
+            <span id="broadcastername"></span>
+            <span id="broadcastertwitter"></span>
+        </div>
+        <div class="titlestuff">
+            <img src="" id="tier">
+            <img src="" id="division">
+            <span id="title"></span>
+            <span id="weeknum"></span>
+            <span id="time"></span>
+        </div>
+    </div>
+
+    <script src="ticker-logic.js"></script>
+    <script src="Updater.js"></script>
+    <script src="regex-operation.js"></script>
+    <script>
+        //define settings to use
+        const settings = {
+            'string' : {
+                'F6' : 'score',
+                'A2' : 'caster1name',
+                'B2' : 'caster1twitter',
+                'A3' : 'caster2name',
+                'B3' : 'caster2twitter',
+                'F5' : 'title',
+                'O3' : 'scrolltext',
+                'F7' : 'weeknum',
+                'D2' : 'broadcastername',
+                'D3' : 'broadcastertwitter'
+            },
+            "image": {
+                'G2' : 'team1logo',
+                'G3' : 'team2logo',
+                'U2' : 'tier',
+                'U3' : 'division'
+            }
+        };
+
+
+
+        //define spreadsheet
+        const spreadsheetID = '1ykZTMH8hR-_PcPym2qROkcYSTyhmE4IPo3uIwuEuj5c';
+
+        //select worksheet
+        const worksheetName = 'Output';
+
+        //specify api key
+        const apiKey = 'AIzaSyCbUMvJrq3vI9-zFitXEnF4DDV1FIqhFZ4';
+
+        //update inteval every 3 seconds
+        const updateInterval = 3000;
+
+        const u = new GraphicsUpdater(settings, spreadsheetID, worksheetName, apiKey, updateInterval, false);
+
+        const tickInterval = 10;
+
+        const l = new TickerUpdater(tickInterval)
+
+        //import operation preset
+        u.addOperation('regex', regexOperation);
+
+        //start updating u
+        u.startUpdating();
+    </script>
+</body>
+</html>
