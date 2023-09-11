@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "MadeTommyBlack";
+    src: url("fonts/MadeTommyBlack.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyBold";
+    src: url("fonts/MadeTommyBold.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyExtraBold";
+    src: url("fonts/MadeTommyExtraBold.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyLight";
+    src: url("fonts/MadeTommyLight.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyMedium";
+    src: url("fonts/MadeTommyMedium.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyRegular";
+    src: url("fonts/MadeTommyRegular.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyThin";
+    src: url("fonts/MadeTommyThin.otf");
+}
+
+#tierlogo{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 63px;
+    left: 454px;
+    z-index: 1;
+}
+
+#backimage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
+    z-index: 0;
+}
+
+#date{
+    position: absolute;
+    top: 113px;
+    left: 618px;
+    width: 682px;
+    height: 27px;
+    font-family: MadeTommyRegular;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+
+#remaining{
+    position: absolute;
+    top: 858px;
+    left: 1038px;
+    width: 871px;
+    height: 200px;
+    font-family: MadeTommyRegular;
+    font-size: 25px;
+    color: white;
+}
+
+.teamname{
+    width: 424px;
+    height: 38px;
+    text-align: left;
+    color: white;
+    font-family: MadeTommyRegular;
+    font-size: 35px;
+}
+

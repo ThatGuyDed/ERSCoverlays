@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1948.38867 1652.99414">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0b4655;
+      }
+
+      .cls-2 {
+        stroke: url(#ERS_Orange_Gradient);
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 14px;
+      }
+
+      .cls-3 {
+        stroke: url(#Unbenannter_Verlauf_3);
+      }
+    </style>
+    <linearGradient id="ERS_Orange_Gradient" data-name="ERS Orange Gradient" x1="156.66708" y1="1020.51295" x2="898.86083" y2="1020.51295" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#06191e"/>
+      <stop offset="0" stop-color="#e94b21"/>
+      <stop offset="1" stop-color="#da6517"/>
+    </linearGradient>
+    <linearGradient id="Unbenannter_Verlauf_3" data-name="Unbenannter Verlauf 3" x1="1076.91651" y1="1020.51295" x2="1819.11026" y2="1020.51295" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#da6517"/>
+      <stop offset="1" stop-color="#e94b21"/>
+      <stop offset="1" stop-color="#06191e"/>
+    </linearGradient>
+  </defs>
+  <g id="Caster_Cam_Left" data-name="Caster Cam Left">
+    <g id="Cam_Layout" data-name="Cam Layout">
+      <rect class="cls-1" x="163.66708" y="815.70846" width="724.76094" height="27.43651"/>
+      <rect class="cls-1" x="163.66708" y="1197.88093" width="724.76094" height="27.43651"/>
+      <rect class="cls-2" x="163.66708" y="815.70846" width="728.19375" height="409.60898"/>
+      <polygon class="cls-1" points="288.2332 1197.88093 767.6178 1197.88093 709.42209 1263.79657 346.10583 1263.79657 288.2332 1197.88093"/>
+    </g>
+  </g>
+  <g id="Caster_Cam_Right" data-name="Caster Cam Right">
+    <g id="Cam_Layout-2" data-name="Cam Layout">
+      <rect class="cls-1" x="1083.91651" y="815.70846" width="724.76094" height="27.43651"/>
+      <rect class="cls-1" x="1083.91651" y="1197.88093" width="724.76094" height="27.43651"/>
+      <rect class="cls-3" x="1083.91651" y="815.70846" width="728.19375" height="409.60898"/>
+      <polygon class="cls-1" points="1208.48262 1197.88093 1687.86723 1197.88093 1629.67151 1263.79657 1266.35526 1263.79657 1208.48262 1197.88093"/>
+    </g>
+  </g>
+</svg>
