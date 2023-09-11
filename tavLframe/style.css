@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "MadeTommyBlack";
+    src: url("fonts/MadeTommyBlack.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyBold";
+    src: url("fonts/MadeTommyBold.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyExtraBold";
+    src: url("fonts/MadeTommyExtraBold.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyLight";
+    src: url("fonts/MadeTommyLight.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyMedium";
+    src: url("fonts/MadeTommyMedium.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyRegular";
+    src: url("fonts/MadeTommyRegular.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyThin";
+    src: url("fonts/MadeTommyThin.otf");
+}
+
+.sepimage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
+    z-index: -1;
+}
+
+#title{
+    position: absolute;
+    top: 975px;
+    left: 286px;
+    width: 1300px;
+    height: 56px;
+    font-size: 63px;
+    font-family: MadeTommyBold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #007fff;
+    display: inline-block;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.topictext{
+    z-index: 1;
+    width: 215px;
+    height: 60px;
+    text-align: center;
+    font-family: MadeTommyBold;
+    font-size: 33px;
+    position: absolute;
+    top: 10px;
+    text-transform: uppercase;
+    transition: color 0.5s ease;
+}
+
+
+#topic1colour{
+    color: transparent;
+    position: absolute;
+    top: 153px;
+    left: 17px;
+}
+
+#topic2colour{
+    color: transparent;
+    position: absolute;
+    top: 261px;
+    left: 17px;
+}
+
+#topic3colour{
+    color: transparent;
+    position: absolute;
+    top: 373px;
+    left: 17px;
+}
+
+#topic4colour{
+    color: transparent;
+    position: absolute;
+    top: 484px;
+    left: 17px;
+}
+
+#topic5colour{
+    color: transparent;
+    position: absolute;
+    top: 596px;
+    left: 17px;
+}
+
+#topic6colour{
+    color: transparent;
+    position: absolute;
+    top: 708px;
+    left: 17px;
+}
+
+#timetext{
+    position: absolute;
+    top: 955px;
+    left: 1624px;
+    width: 260px;
+    height: 30px;
+    text-align: center;
+    font-family: MadeTommyLight;
+    color: #120032;
+    z-index: 1;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+#tickertime{
+    position: absolute;
+    top: 925px;
+    left: 1624px;
+    width: 260px;
+    height: 50px;
+    text-align: center;
+    font-family: MadeTommyBold;
+    color: #120032;
+    z-index: 1;
+    font-size: 60px;
+    text-transform: uppercase;
+}

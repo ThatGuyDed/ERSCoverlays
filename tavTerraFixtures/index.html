@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img src="" id="currenttier">
+
+    <div class="game col1 row1">
+        <span id="fix1leftname" class="name leftname"></span>
+        <span id="fix1rightname" class="name rightname"></span>
+        <img id="fix1leftlogo" class="logo leftlogo" src="">
+        <img id="fix1rightlogo" class="logo rightlogo" src="">
+        <span id="fix1score" class="score"></span>
+    </div>
+    <div class="game col1 row2">
+        <span id="fix2leftname" class="name leftname"></span>
+        <span id="fix2rightname" class="name rightname"></span>
+        <img id="fix2leftlogo" class="logo leftlogo" src="">
+        <img id="fix2rightlogo" class="logo rightlogo" src="">
+        <span id="fix2score" class="score"></span>
+    </div>
+    <div class="game col1 row3">
+        <span id="fix3leftname" class="name leftname"></span>
+        <span id="fix3rightname" class="name rightname"></span>
+        <img id="fix3leftlogo" class="logo leftlogo" src="">
+        <img id="fix3rightlogo" class="logo rightlogo" src="">
+        <span id="fix3score" class="score"></span>
+    </div>
+    <div class="game col1 row4">
+        <span id="fix4leftname" class="name leftname"></span>
+        <span id="fix4rightname" class="name rightname"></span>
+        <img id="fix4leftlogo" class="logo leftlogo" src="">
+        <img id="fix4rightlogo" class="logo rightlogo" src="">
+        <span id="fix4score" class="score"></span>
+    </div>
+    <div class="game col1 row5">
+        <span id="fix5leftname" class="name leftname"></span>
+        <span id="fix5rightname" class="name rightname"></span>
+        <img id="fix5leftlogo" class="logo leftlogo" src="">
+        <img id="fix5rightlogo" class="logo rightlogo" src="">
+        <span id="fix5score" class="score"></span>
+    </div>
+    <div class="game col1 row6">
+        <span id="fix6leftname" class="name leftname"></span>
+        <span id="fix6rightname" class="name rightname"></span>
+        <img id="fix6leftlogo" class="logo leftlogo" src="">
+        <img id="fix6rightlogo" class="logo rightlogo" src="">
+        <span id="fix6score" class="score"></span>
+    </div>
+    <div class="game col2 row1">
+        <span id="fix7leftname" class="name leftname"></span>
+        <span id="fix7rightname" class="name rightname"></span>
+        <img id="fix7leftlogo" class="logo leftlogo" src="">
+        <img id="fix7rightlogo" class="logo rightlogo" src="">
+        <span id="fix7score" class="score"></span>
+    </div>
+    <div class="game col2 row2">
+        <span id="fix8leftname" class="name leftname"></span>
+        <span id="fix8rightname" class="name rightname"></span>
+        <img id="fix8leftlogo" class="logo leftlogo" src="">
+        <img id="fix8rightlogo" class="logo rightlogo" src="">
+        <span id="fix8score" class="score"></span>
+    </div>
+    <div class="game col2 row3">
+        <span id="fix9leftname" class="name leftname"></span>
+        <span id="fix9rightname" class="name rightname"></span>
+        <img id="fix9leftlogo" class="logo leftlogo" src="">
+        <img id="fix9rightlogo" class="logo rightlogo" src="">
+        <span id="fix9score" class="score"></span>
+    </div>
+    <div class="game col2 row4">
+        <span id="fix10leftname" class="name leftname"></span>
+        <span id="fix10rightname" class="name rightname"></span>
+        <img id="fix10leftlogo" class="logo leftlogo" src="">
+        <img id="fix10rightlogo" class="logo rightlogo" src="">
+        <span id="fix10score" class="score"></span>
+    </div>
+    <div class="game col2 row5">
+        <span id="fix11leftname" class="name leftname"></span>
+        <span id="fix11rightname" class="name rightname"></span>
+        <img id="fix11leftlogo" class="logo leftlogo" src="">
+        <img id="fix11rightlogo" class="logo rightlogo" src="">
+        <span id="fix11score" class="score"></span>
+    </div>
+    <div class="game col2 row6">
+        <span id="fix12leftname" class="name leftname"></span>
+        <span id="fix12rightname" class="name rightname"></span>
+        <img id="fix12leftlogo" class="logo leftlogo" src="">
+        <img id="fix12rightlogo" class="logo rightlogo" src="">
+        <span id="fix12score" class="score"></span>
+    </div>
+
+    <script src="Updater.js"></script>
+    <script src="regex-operation.js"></script>
+    <script>
+        //define settings to use
+        const settings = {
+            'string' : {
+                'I14' : 'fix1leftname',
+                'J14' : 'fix1rightname',
+                'M14' : 'fix1score',
+                'I15' : 'fix2leftname',
+                'J15' : 'fix2rightname',
+                'M15' : 'fix2score',
+                'I16' : 'fix3leftname',
+                'J16' : 'fix3rightname',
+                'M16' : 'fix3score',
+                'I17' : 'fix4leftname',
+                'J17' : 'fix4rightname',
+                'M17' : 'fix4score',
+                'I18' : 'fix5leftname',
+                'J18' : 'fix5rightname',
+                'M18' : 'fix5score',
+                'I19' : 'fix6leftname',
+                'J19' : 'fix6rightname',
+                'M19' : 'fix6score',
+                'I20' : 'fix7leftname',
+                'J20' : 'fix7rightname',
+                'M20' : 'fix7score',
+                'I21' : 'fix8leftname',
+                'J21' : 'fix8rightname',
+                'M21' : 'fix8score',
+                'I22' : 'fix9leftname',
+                'J22' : 'fix9rightname',
+                'M22' : 'fix9score',
+                'I23' : 'fix10leftname',
+                'J23' : 'fix10rightname',
+                'M23' : 'fix10score',
+                'I24' : 'fix11leftname',
+                'J24' : 'fix11rightname',
+                'M24' : 'fix11score',
+                'I25' : 'fix12leftname',
+                'J25' : 'fix12rightname',
+                'M25' : 'fix12score',
+            },
+            "image": {
+                'K14' : 'fix1leftlogo',
+                'L14' : 'fix1rightlogo',
+                'K15' : 'fix2leftlogo',
+                'L15' : 'fix2rightlogo',
+                'K16' : 'fix3leftlogo',
+                'L16' : 'fix3rightlogo',
+                'K17' : 'fix4leftlogo',
+                'L17' : 'fix4rightlogo',
+                'K18' : 'fix5leftlogo',
+                'L18' : 'fix5rightlogo',
+                'K19' : 'fix6leftlogo',
+                'L19' : 'fix6rightlogo',
+                'K20' : 'fix7leftlogo',
+                'L20' : 'fix7rightlogo',
+                'K21' : 'fix8leftlogo',
+                'L21' : 'fix8rightlogo',
+                'K22' : 'fix9leftlogo',
+                'L22' : 'fix9rightlogo',
+                'K23' : 'fix10leftlogo',
+                'L23' : 'fix10rightlogo',
+                'K24' : 'fix11leftlogo',
+                'L24' : 'fix11rightlogo',
+                'K25' : 'fix12leftlogo',
+                'L25' : 'fix12rightlogo',
+            },
+            "tier": {
+                'H2' : 'currenttier'
+            },
+        };
+
+
+
+        //define spreadsheet
+        const spreadsheetID = '1B1Twd3-roRogcuRg3oW7Q97XwDqDwGQpcFxjDUD0eSU';
+
+        //select worksheet
+        const worksheetName = 'Output';
+
+        //specify api key
+        const apiKey = 'AIzaSyASSy3E-sz7GhcO9qUHdKtx8lr03dRhYtM';
+
+        //update inteval every 3 seconds
+        const updateInterval = 3000;
+
+        const u = new GraphicsUpdater(settings, spreadsheetID, worksheetName, apiKey, updateInterval, false);
+
+        //import operation preset
+        u.addOperation('regex', regexOperation);
+
+        //start updating u
+        u.startUpdating();
+    </script>
+</body>
+</html>
