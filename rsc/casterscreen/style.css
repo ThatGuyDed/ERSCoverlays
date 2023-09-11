@@ -1,0 +1,230 @@
+@font-face {
+    font-family: "ApotekBold";
+    src: url("./fonts/Apotek_Black.otf");
+}
+
+@font-face {
+    font-family: "ApotekMedium";
+    src: url("./fonts/ApotekMedium.otf");
+}
+
+
+@font-face {
+    font-family: "ApotekThin";
+    src: url("./fonts/ApotekLight.otf");
+}
+
+body{
+
+}
+
+.botstuff{
+    z-index: 0;
+}
+
+.midstuff{
+    z-index: 1;
+}
+
+.topstuff{
+    z-index: 2;
+}
+
+.logo{
+    max-width: 120px;
+    max-height: 120px;
+}
+
+#team1logo{
+    position: absolute;
+    top: 33px;
+    left: 264px;
+}
+
+#team2logo{
+    position: absolute;
+    top: 33px;
+    left: 621px;
+}
+
+#score{
+    display: block;
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    top: 47px;
+    left: 381px;
+    font-family: ApotekBold;
+    color: white;
+    letter-spacing: 6px;
+    font-size: 72px;
+    text-align: center;
+}
+
+#backimage{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#topimage{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#tier{
+    max-height: 54px;
+    max-width: 267px;
+    position: absolute;
+    top: 943px;
+    left: 61px;
+}
+
+#division{
+    max-height: 54px;
+    max-width: 267px;
+    position: absolute;
+    top: 943px;
+    left: 339px;
+}
+
+#title{
+    display: block;
+    width: 1250px;
+    height: 51px;
+    position: absolute;
+    top: 941px;
+    left: 634px;
+    font-family: ApotekBold;
+    letter-spacing: 10px;
+    color: White;
+    font-size: 47px;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: center;
+}
+
+marquee{
+    position: absolute;
+    top: 1033px;
+    height: 30px;
+    overflow: hidden;
+    line-height: 30px;
+    font-size: 30px;
+    color: white;
+    font-family: ApotekThin;
+}
+
+#weeknum{
+    display: block;
+    width: 150px;
+    height: 52px;
+    position: absolute;
+    top: 1031px;
+    left: 1599px;
+    font-family: ApotekMedium;
+    color: white;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: right;
+    vertical-align: center;
+    letter-spacing: 5px;
+}
+
+#time{
+    display: block;
+    width: 150px;
+    height: 52px;
+    position: absolute;
+    top: 1031px;
+    left: 1779px;
+    font-family: ApotekBold;
+    color: #141d24;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: left;
+    vertical-align: center;
+    letter-spacing: 5px;
+}
+
+.cs{
+    display: block;
+    width: 375px;
+    height: 30px;
+    font-family: ApotekBold;
+    text-align: center;
+    vertical-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+.castername{
+    font-size: 36px;
+    letter-spacing: 3px;
+}
+
+.castertwitter{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+
+#caster1name{
+    position: absolute;
+    left: 313px;
+    top: 810px;
+}
+
+#caster1twitter{
+    position: absolute;
+    left: 312px;
+    top: 851px;
+    font-family: ApotekThin;
+}
+
+#caster2name{
+    position: absolute;
+    left: 1245px;
+    top: 810px;
+}
+
+#caster2twitter{
+    position: absolute;
+    left: 1245px;
+    top: 851px;
+    font-family: ApotekThin;
+}
+
+#broadcastername{
+    display: block;
+    width: 200px;
+    height: 30px;
+    font-family: ApotekBold;
+    color: white;
+    text-align: center;
+    vertical-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: absolute;
+    font-size: 26px;
+    top: 815px;
+    left: 860px;
+}
+
+#broadcastertwitter{
+    display: block;
+    width: 200px;
+    height: 30px;
+    font-family: ApotekThin;
+    color: white;
+    text-align: center;
+    vertical-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 15px;
+    letter-spacing: 1px;
+    top: 844px;
+    left: 860px;
+}

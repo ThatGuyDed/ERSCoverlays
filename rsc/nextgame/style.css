@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "Apotek";
+    src: url("./fonts/Apotek_Black.ttf");
+}
+
+body{
+    text-transform: uppercase;
+    position: absolute;
+    margin: 0;
+}
+
+.backstuff{
+    z-index: 0;
+}
+
+.frontstuff{
+    z-index: 1;
+}
+
+.backimage{
+    position: absolute;
+    width: 1920px;
+    top:0;
+    left:0;
+    height: 1080px;
+}
+
+span{
+    font-family: Apotek;
+    font-size: 30px;
+    color: white;
+}
+
+#nextmap{
+    position: absolute;
+    max-width: 500px;
+    left: 90px;
+    top: 927px;
+}
+
+#format{
+    position: absolute;
+    left: 694px;
+    top: 926px;
+    max-width: 60px;
+    text-align: center;
+    color: #141d24;
+}
+
+#casters{
+    position: absolute;
+    max-width: 620px;
+    left: 64px;
+    top: 1007px;
+}
+
+#team2name{
+    position: absolute;
+    left: 460px;
+    top: 968px;
+}
+
+#team1name{
+    position: absolute;
+    left: 113px;
+    top: 968px;
+}
+
+#team1logo{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 66px;
+    top: 962px;
+}
+
+#team2logo{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 413px;
+    top: 962px;
+}

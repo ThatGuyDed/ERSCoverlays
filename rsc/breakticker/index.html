@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RSC Ticker Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<img id="topimage" src="ModularPieces/RSC_Break_Screen_Ticker.png">
+<img id="botimage" src="ModularPieces/RSC_Break_Screen_Ticker1.png">
+
+<div class="topdivstuff">
+<span id="title"></span>
+<span id="countdown"></span>
+
+<p id="tickertime"></p>
+
+<span id="backinbool" style="display: none"></span>
+<span id="timertime" style="display: none"></span>
+
+<span id="backin"></span>
+
+<div class="upnext">
+    <span id="upnexttext"></span>
+    <span id="upnextvs"></span>
+    <img src="" id="upnextleftlogo" class="nextteamlogos">
+    <img src="" id="upnextrightlogo" class="nextteamlogos">
+</div>
+
+<div class="fixturestuff topstuff">
+    <span id="toptime" class="gametime"></span>
+    <span id="topscore" class="gamescore"></span>
+    <img src="" id="toptier" class="tierimage">
+    <div class="teamlogos">
+        <img src="" id="topleftteam" class="teamlogos teamlogoleft">
+        <img src="" id="toprightteam" class="teamlogos teamlogoright">
+    </div>
+</div>
+<div class="fixturestuff midstuff">
+    <span id="midtime" class="gametime"></span>
+    <span id="midscore" class="gamescore"></span>
+    <img src="" id="midtier" class="tierimage">
+    <div class="teamlogos">
+        <img src="" id="midleftteam" class="teamlogos teamlogoleft">
+        <img src="" id="midrightteam" class="teamlogos teamlogoright">
+    </div>
+</div>
+<div class="fixturestuff botstuff">
+    <span id="bottime" class="gametime"></span>
+    <span id="botscore" class="gamescore"></span>
+    <img src="" id="bottier" class="tierimage">
+    <div class="teamlogos">
+        <img src="" id="botleftteam" class="teamlogos teamlogoleft">
+        <img src="" id="botrightteam" class="teamlogos teamlogoright">
+    </div>
+</div>
+</div>
+
+<style>
+    .scroll-left {
+        height: 50px;
+        overflow: hidden;
+        position: relative;
+        top: 1012px;
+    }
+    .scroll-left span {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        line-height: 50px;
+        text-align: center;
+        /* Starting position */
+        transform:translateX(100%);
+        /* Apply animation to this element */
+        animation: scroll-left 15s linear infinite;
+    }
+    /* Move it (define the animation) */
+    @keyframes scroll-left {
+        0%   {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+</style>
+
+<div class="position-relative marquee-container d-none d-sm-block">
+    <div class="marquee d-flex justify-content-around">
+        <span id="ticker"></span>
+    </div>
+    <!--<div class="marquee marquee2 d-flex justify-content-around">
+        <span id="ticker2"></span>
+    </div>
+    <div class="marquee marquee3 d-flex justify-content-around">
+        <span id="ticker3"></span>
+    </div>-->
+</div>
+
+
+<script src="ticker-logic.js"></script>
+<script src="Updater.js"></script>
+<script src="regex-operation.js"></script>
+<script>
+    //define settings to use
+    const settings = {
+        'string' : {
+            'O3' : 'ticker',
+            'P2' : 'toptime',
+            'P3' : 'midtime',
+            'P4' : 'bottime',
+            'Q2' : 'topscore',
+            'Q3' : 'midscore',
+            'Q4' : 'botscore',
+            'O2' : 'title',
+            'O4' : 'backin',
+            'O6' : 'upnexttext',
+            'O7' : 'upnextvs',
+            'O5' : 'backinbool',
+            'P6' : 'timertime'
+
+        },
+        "image": {
+            'G2' : 'upnextleftlogo',
+            'G3' : 'upnextrightlogo',
+            'K2' : 'topleftteam',
+            'K3' : 'toprightteam',
+            'K4' : 'midleftteam',
+            'K5' : 'midrightteam',
+            'K6' : 'botleftteam',
+            'K7' : 'botrightteam',
+            'M2' : 'toptier',
+            'M3' : 'midtier',
+            'M4' : 'bottier',
+
+
+        }
+    };
+
+
+
+    //define spreadsheet
+    const spreadsheetID = '1BggAR3x3zItkq_RwmpTxr8cnRxmB56itbMa7TjDlYdg';
+
+    //select worksheet
+    const worksheetName = 'Output';
+
+    //specify api key
+    const apiKey = 'AIzaSyCrkaECJlh4thEpxSrJ61LNG9ahv7OVEtA';
+
+    //update inteval every 3 seconds
+    const updateInterval = 3000;
+
+    const u = new GraphicsUpdater(settings, spreadsheetID, worksheetName, apiKey, updateInterval, false);
+
+    const tickInterval = 10;
+
+    const l = new TickerUpdater(tickInterval)
+
+    //import operation preset
+    u.addOperation('regex', regexOperation);
+
+    //start updating u
+    u.startUpdating();
+</script>
+</body>
+</html>

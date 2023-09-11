@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <title>RSC Next Map</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="backstuff">
+    <img id="backimage" src="ModularPieces/back_piece.png">
+</div>
+<div class="frontstuff">
+    <span id="nextmap"></span>
+    <span id="format"></span>
+    <span id="casters"></span>
+    <div class="teamstuff">
+        <div class="team1stuff">
+            <span id="team1name"></span>
+            <img src="" id="team1logo">
+        </div>
+        <div class="team2stuff">
+            <span id="team2name"></span>
+            <img src="" id="team2logo">
+        </div>
+    </div>
+</div>
+
+<script src="Updater.js"></script>
+<script src="regex-operation.js"></script>
+<script>
+    //define settings to use
+    const settings = {
+        'string' : {
+            'R2' : 'nextmap',
+            'S2' : 'casters',
+            'T2' : 'format',
+            'F2' : 'team1name',
+            'F3' : 'team2name'
+        },
+        "image": {
+            'G2' : 'team1logo',
+            'G3' : 'team2logo'
+        }
+    };
+
+
+
+    //define spreadsheet
+    const spreadsheetID = '1BggAR3x3zItkq_RwmpTxr8cnRxmB56itbMa7TjDlYdg';
+
+    //select worksheet
+    const worksheetName = 'Output';
+
+    //specify api key
+    const apiKey = 'AIzaSyCrkaECJlh4thEpxSrJ61LNG9ahv7OVEtA';
+
+    //update inteval every 3 seconds
+    const updateInterval = 3000;
+
+    const u = new GraphicsUpdater(settings, spreadsheetID, worksheetName, apiKey, updateInterval, false);
+
+    //import operation preset
+    u.addOperation('regex', regexOperation);
+
+    //start updating u
+    u.startUpdating();
+</script>
+</body>
+</html></title>
+</head>
+<body>
+</body>
+</html>
