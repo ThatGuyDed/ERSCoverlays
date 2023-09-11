@@ -1,0 +1,137 @@
+@font-face {
+    font-family: "MadeTommyBlack";
+    src: url("fonts/MadeTommyBlack.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyBold";
+    src: url("fonts/MadeTommyBold.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyExtraBold";
+    src: url("fonts/MadeTommyExtraBold.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyLight";
+    src: url("fonts/MadeTommyLight.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyMedium";
+    src: url("fonts/MadeTommyMedium.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyRegular";
+    src: url("fonts/MadeTommyRegular.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyThin";
+    src: url("fonts/MadeTommyThin.otf");
+}
+
+#castercams{
+    position: absolute;
+    top: -567px;
+    left: -23px;
+    width: 1940px;
+    z-index: 1;
+}
+
+#topinfo{
+    position: absolute;
+    top: -570px;
+    left: -24px;
+    width: 1940px;
+    z-index: 1;
+}
+
+
+#logos{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 1920px;
+    height: 1080px;
+    z-index: 1;
+}
+
+#temp{
+    width: 1920px;
+    height: 1080px;
+    opacity: 30%;
+    z-index: 10;
+}
+
+#caster1name{
+    position: absolute;
+    top: 641px;
+    left: 405px;
+    width: 192px;
+    height: 19px;
+    z-index: 2;
+}
+
+#caster1twitter{
+    position: absolute;
+    top: 665px;
+    left: 405px;
+    width: 192px;
+    height: 19px;
+    z-index: 2;
+}
+
+#caster2twitter{
+    position: absolute;
+    top: 665px;
+    left: 1324px;
+    width: 192px;
+    height: 19px;
+    z-index: 2;
+}
+
+#caster2name{
+    position: absolute;
+    top: 641px;
+    left: 1324px;
+    width: 192px;
+    height: 19px;
+    z-index: 2;
+}
+
+#broadcastername{
+    position: absolute;
+    top: 842px;
+    left: 820px;
+    width: 300px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    font-family: "MadeTommyBold";
+    letter-spacing: 1px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.name{
+    font-family: "MadeTommyBold";
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+
+.twitter{
+    font-family: "MadeTommyRegular";
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+}

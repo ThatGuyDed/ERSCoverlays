@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img id="back" src="ModularPieces/back.png" style="position:absolute; top: 0; left: 0; width: 1920px; height: 1080px;"
+
+    <div id="caster1stuff">
+        <span id="caster1name" class="name"></span>
+        <span id="caster1twitter" class="twitter"></span>
+    </div>
+
+    <div id="caster2stuff">
+        <span id="caster2name" class="name"></span>
+        <span id="caster2twitter" class="twitter"></span>
+    </div>
+
+    <span id="broadcastername"></span>
+
+    <script src="Updater.js"></script>
+    <script src="regex-operation.js"></script>
+    <script>
+        //define settings to use
+        const settings = {
+            'string' : {
+                'E4' : 'nextmap',
+                'A2' : 'caster1name',
+                'B2' : 'caster1twitter',
+                'A3' : 'caster2name',
+                'B3' : 'caster2twitter',
+                'C2' : 'broadcastername'
+
+            },
+            "image": {
+                'I2' : 'team1logo'
+            }
+        };
+
+
+
+        //define spreadsheet
+        const spreadsheetID = '1mcLGEj5AlIWYOuKsoWm_QexjG8EaHdnj2mRhQxS1yaU';
+
+        //select worksheet
+        const worksheetName = 'Output';
+
+        //specify api key
+        const apiKey = 'AIzaSyASSy3E-sz7GhcO9qUHdKtx8lr03dRhYtM';
+
+        //update inteval every 3 seconds
+        const updateInterval = 3000;
+
+        const u = new GraphicsUpdater(settings, spreadsheetID, worksheetName, apiKey, updateInterval, false);
+
+        //import operation preset
+        u.addOperation('regex', regexOperation);
+
+        //start updating u
+        u.startUpdating();
+    </script>
+</body>
+</html>
