@@ -1,0 +1,20 @@
+body{
+
+}
+
+#temp{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
+    opacity: 100%;
+    z-index: -1;
+}
+
+#scoreboard{
+    position: absolute;
+    width: 3360px;
+    top: -1036px;
+    left: -719px;
+}

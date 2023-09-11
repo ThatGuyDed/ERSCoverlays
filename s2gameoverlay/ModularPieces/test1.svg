@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Scorebug_" data-name="!Scorebug!" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3332.2793 2814.22175">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#ERS_Orange_Gradient-3);
+      }
+
+      .cls-2 {
+        fill: #023947;
+        stroke: #0b7482;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: url(#Unbenannter_Verlauf_33);
+      }
+
+      .cls-4 {
+        fill: url(#Unbenannter_Verlauf_73-2);
+      }
+
+      .cls-5 {
+        fill: url(#Unbenannter_Verlauf_74);
+      }
+
+      .cls-6 {
+        fill: #db6412;
+      }
+
+      .cls-7 {
+        fill: #0b4655;
+      }
+
+      .cls-8 {
+        fill: url(#Very_Dark_Orange_Gradient);
+      }
+
+      .cls-9 {
+        fill: url(#Unbenannter_Verlauf_94);
+      }
+
+      .cls-10 {
+        fill: url(#Very_Dark_Blue-Orange_Gradient);
+      }
+
+      .cls-11 {
+        fill: url(#Unbenannter_Verlauf_106);
+      }
+
+      .cls-12 {
+        fill: url(#Unbenannter_Verlauf_73);
+      }
+
+      .cls-13 {
+        fill: url(#Unbenannter_Verlauf_106-2);
+      }
+
+      .cls-14 {
+        fill: url(#Very_Dark_Blue_Gradient);
+      }
+
+      .cls-15 {
+        fill: url(#ERS_Orange_Gradient-2);
+      }
+
+      .cls-16 {
+        fill: url(#Unbenannter_Verlauf_73-3);
+      }
+
+      .cls-17 {
+        fill: url(#Unbenannter_Verlauf_99);
+      }
+
+      .cls-18 {
+        fill: url(#ERS_Dark_Orange_Gradient);
+      }
+
+      .cls-19 {
+        fill: url(#ERS_Orange_Gradient-4);
+      }
+
+      .cls-20 {
+        fill: url(#ERS_Orange_Gradient);
+      }
+    </style>
+    <linearGradient id="Very_Dark_Blue_Gradient" data-name="Very Dark Blue Gradient" x1="1246.41268" y1="1085.73728" x2="1664.73747" y2="1085.73728" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#101926"/>
+      <stop offset=".25" stop-color="#1c1c1c"/>
+      <stop offset="1" stop-color="#101926"/>
+    </linearGradient>
+    <linearGradient id="Very_Dark_Orange_Gradient" data-name="Very Dark Orange Gradient" x1="1664.83274" y1="1085.8025" x2="2083.25133" y2="1085.8025" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#281511"/>
+      <stop offset=".25" stop-color="#1c1c1c"/>
+      <stop offset="1" stop-color="#281511"/>
+    </linearGradient>
+    <linearGradient id="Unbenannter_Verlauf_106" data-name="Unbenannter Verlauf 106" x1="1664.8353" y1="1115.4152" x2="1424.09618" y2="1115.4152" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#101926"/>
+      <stop offset=".38705" stop-color="#0b4655"/>
+    </linearGradient>
+    <linearGradient id="Unbenannter_Verlauf_33" data-name="Unbenannter Verlauf 33" x1="1148.94529" y1="1079.63855" x2="1304.50784" y2="1079.63855" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1c1c1c"/>
+      <stop offset="1" stop-color="#101926"/>
+    </linearGradient>
+    <linearGradient id="ERS_Dark_Orange_Gradient" data-name="ERS Dark Orange Gradient" x1="1981.31901" y1="1079.63855" x2="2136.76865" y2="1079.63855" gradientTransform="translate(4161.93147) rotate(-180) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1c1c1c"/>
+      <stop offset="1" stop-color="#281511"/>
+    </linearGradient>
+    <linearGradient id="Unbenannter_Verlauf_99" data-name="Unbenannter Verlauf 99" x1="2045.50072" y1="1079.63855" x2="1981.31901" y2="1079.63855" gradientTransform="translate(4161.93147) rotate(-180) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#281511"/>
+      <stop offset="1" stop-color="#da6517"/>
+    </linearGradient>
+    <linearGradient id="Unbenannter_Verlauf_94" data-name="Unbenannter Verlauf 94" x1="1981.31901" y1="1048.4987" x2="2124.6566" y2="1048.4987" gradientTransform="translate(4161.93147) rotate(-180) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#da6517"/>
+      <stop offset="1" stop-color="#281511"/>
+    </linearGradient>
+    <linearGradient id="ERS_Orange_Gradient" data-name="ERS Orange Gradient" x1="1664.83083" y1="1115.4152" x2="1905.56995" y2="1115.4152" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#281511"/>
+      <stop offset="1" stop-color="#da6517"/>
+    </linearGradient>
+    <linearGradient id="Unbenannter_Verlauf_106-2" data-name="Unbenannter Verlauf 106" x1="1664.8353" y1="1091.26229" x2="1424.09618" y2="1091.26229" gradientTransform="translate(0 2219.47783) scale(1 -1)" xlink:href="#Unbenannter_Verlauf_106"/>
+    <linearGradient id="ERS_Orange_Gradient-2" data-name="ERS Orange Gradient" y1="1113.8275" y2="1113.8275" gradientTransform="translate(0 2242.04304) scale(1 -1)" xlink:href="#ERS_Orange_Gradient"/>
+    <linearGradient id="Unbenannter_Verlauf_73" data-name="Unbenannter Verlauf 73" x1="1292.46944" y1="1048.49969" x2="1148.94529" y2="1048.49969" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#101926"/>
+      <stop offset="1" stop-color="#0b7482"/>
+    </linearGradient>
+    <linearGradient id="Unbenannter_Verlauf_73-2" data-name="Unbenannter Verlauf 73" x1="1581.85575" y1="1050.86209" x2="1246.5105" y2="1050.86209" xlink:href="#Unbenannter_Verlauf_73"/>
+    <linearGradient id="Unbenannter_Verlauf_74" data-name="Unbenannter Verlauf 74" x1="1329.49006" y1="1085.8025" x2="1246.5105" y2="1085.8025" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#101926"/>
+      <stop offset="1" stop-color="#0b7482"/>
+    </linearGradient>
+    <linearGradient id="ERS_Orange_Gradient-3" data-name="ERS Orange Gradient" x1="2000.17607" y1="1085.8025" x2="2083.15563" y2="1085.8025" xlink:href="#ERS_Orange_Gradient"/>
+    <linearGradient id="ERS_Orange_Gradient-4" data-name="ERS Orange Gradient" x1="1747.81038" y1="1050.86209" x2="2083.15563" y2="1050.86209" xlink:href="#ERS_Orange_Gradient"/>
+    <linearGradient id="Unbenannter_Verlauf_73-3" data-name="Unbenannter Verlauf 73" x1="1213.31356" y1="1079.63855" y2="1079.63855" xlink:href="#Unbenannter_Verlauf_73"/>
+    <linearGradient id="Very_Dark_Blue-Orange_Gradient" data-name="Very Dark Blue-Orange Gradient" x1="1131.21122" y1="1036.80619" x2="2198.32983" y2="1036.80619" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#101926"/>
+      <stop offset=".5" stop-color="#1c1c1c"/>
+      <stop offset="1" stop-color="#281511"/>
+    </linearGradient>
+  </defs>
+  <polygon class="cls-14" points="1664.73747 1046.73728 1246.41268 1046.73728 1276.13822 1080.3964 1305.46113 1113.17462 1315.28633 1124.73728 1664.73747 1124.73728 1664.73747 1046.73728"/>
+  <polygon class="cls-8" points="1664.8353 1046.8025 2083.25133 1046.8025 2055.9682 1077.58763 2032.45557 1103.86703 2013.81906 1124.8025 1664.83274 1124.8025 1664.8353 1046.8025"/>
+  <polyline class="cls-11" points="1664.8353 1124.8025 1616.02449 1106.02791 1424.09618 1124.8025"/>
+  <polygon class="cls-3" points="1207.17451 1112.47461 1148.94529 1046.8025 1246.5105 1046.8025 1304.50784 1112.47461 1207.17451 1112.47461"/>
+  <polygon class="cls-18" points="2122.49614 1112.47461 2180.61246 1046.8025 2083.16015 1046.8025 2025.16282 1112.47461 2122.49614 1112.47461"/>
+  <polygon class="cls-17" points="2180.61246 1046.8025 2116.43075 1112.47461 2122.32002 1112.47461 2151.02335 1080.23853 2180.61246 1046.8025"/>
+  <polyline class="cls-9" points="2180.61246 1046.8025 2177.39064 1050.1949 2037.27487 1046.8025"/>
+  <polyline class="cls-20" points="1664.83083 1124.8025 1713.64164 1106.02791 1905.56995 1124.8025"/>
+  <path class="cls-6" d="m1698.98819,1068.32152c-4.33968-1.94201-9.17493-4.17568-13.48315-6.25623-2.94946-1.25948-18.27173-10.54688-21.42057-12.24131.00016-.00015,1.50089.0019,1.50089.0019l-57.4552,33.09365.75122-1.29919-.00275,8.81627c.11589,2.5904-.15926,6.20199-.41035,8.81614.00013,0-.54498-.94572-.54498-.94572,3.27193,2.2578,6.51165,4.56483,9.73352,6.89692-1.80999-.82512-3.63275-1.62833-5.43036-2.47484-1.9662-.9127-3.93483-1.82417-5.88574-2.76524l-.05743-.71179c-.61056-4.99573-.36793-12.5462-.40187-17.63268-.00005,0,.00019-.86682.00019-.86682l.75116-.43265,57.4552-33.09365.7511-.43263.75.43468c3.11087,1.90833,18.58337,10.53125,21.26893,12.50269,3.91926,2.73929,8.30206,5.75056,12.13018,8.5905h0Z"/>
+  <path class="cls-6" d="m1630.39963,1114.52474c4.37257,1.93784,9.2436,4.16916,13.58496,6.24648,2.96347,1.27127,18.41239,10.554,21.585,12.24848-.00016.00015-1.49912.0022-1.49912.0022l57.25549-33.13462-.7486,1.29812c.06508-3.0575-.13789-10.26673.06857-13.22287.00016,0,.35752-4.40763.35752-4.40763l.53674.92983c-2.88575-1.92086-6.7503-4.78281-9.53867-6.74902,1.77348.80678,3.56065,1.58991,5.32218,2.41727l5.29071,2.47179.47968.22411c.19583,2.89434.65783,6.65406.48309,9.52131.00018-.00005.00018,8.8152.00018,8.8152v.8651l-.74872.43331-57.25549,33.13462-.74908.43349-.75024-.43145c-3.13617-1.90799-18.72632-10.53563-21.44282-12.4955-3.95168-2.74249-8.37105-5.7561-12.23137-8.60024h0Z"/>
+  <polyline class="cls-13" points="1664.8353 1124.8025 1616.02449 1131.62858 1424.09618 1124.8025"/>
+  <polyline class="cls-15" points="1664.83083 1124.8025 1713.64164 1131.62858 1905.56995 1124.8025"/>
+  <polygon class="cls-7" points="1713.53095 1131.62858 1664.83083 1136.06337 1616.02449 1131.62858 1664.8353 1124.8025 1713.53095 1131.62858"/>
+  <polygon class="cls-2" points="1713.62165 1106.02791 1713.64611 1046.8025 1664.8207 1046.8025 1616.04895 1046.8025 1616.02449 1106.02791 1664.82307 1134.20178 1713.62165 1106.02791"/>
+  <polyline class="cls-12" points="1148.94529 1046.8025 1152.27228 1050.19688 1292.46944 1046.8025"/>
+  <polyline class="cls-4" points="1246.5105 1046.8025 1255.14802 1054.92168 1581.85575 1046.8025"/>
+  <polygon class="cls-5" points="1246.5105 1046.8025 1329.49006 1124.8025 1315.39502 1124.8025 1315.39502 1124.8025 1246.5105 1046.8025"/>
+  <polygon class="cls-1" points="2083.15563 1046.8025 2000.17607 1124.8025 2014.27111 1124.8025 2014.27111 1124.8025 2083.15563 1046.8025"/>
+  <polyline class="cls-19" points="2083.15563 1046.8025 2074.51811 1054.92168 1747.81038 1046.8025"/>
+  <polygon class="cls-16" points="1148.94529 1046.8025 1213.31356 1112.47461 1207.17451 1112.47461 1178.68883 1080.34787 1148.94529 1046.8025"/>
+  <path class="cls-6" d="m1607.38138,1081.61978c.58877,1.23517,1.17489,2.56219,1.53949,3.85759-.07738.16719-.02902,4.6406-.04225,4.95911.00001.00009-.00273,8.81641-.00273,8.81641l-.74841-1.29849,5.14044,2.97569,1.2851.74392c.19739.153.47003.17596.64587.36623l.50549.60874c2.38154,2.95813,2.59236,2.75274-1.2356,2.13419.00013.00008-.77953-.1351-.77953-.1351-.25256-.05771-.40826-.28272-.63922-.37769-1.39195-.80645-5.75551-3.3313-7.17444-4.15312l.00031-.86529c.00124-2.91684.00301-10.40341.00409-13.22449-.03011-.38508-.07362-.74025.12288-1.10199.40228-1.09044.84419-2.25399,1.37852-3.30571h0Z"/>
+  <polygon class="cls-7" points="1617.02552 1105.41843 1664.83274 1100.65032 1712.74834 1105.41843 1664.88693 1133.38038 1617.02552 1105.41843"/>
+  <path class="cls-6" d="m1630.39963,1114.52474c4.40079,1.89033,9.27796,4.10674,13.64166,6.14787,2.85732,1.48457,18.37633,10.60913,21.52827,12.34713-.00013.0001-1.49909.00215-1.49909.00215l57.2533-33.13844-.75079,1.30193c-.08653-1.30713.06346-3.09487.20081-4.40765.33889-4.26588.8382-8.98546,1.30353-13.22291.50732,4.23045.92087,8.95612,1.30374,13.22289.20264,1.6962.26277,3.59425.19134,5.28077.00009,0-.74154.42914-.74154.42914l-57.25769,33.13081-.74915.43346c-3.74631-2.20681-18.75029-10.68706-22.2497-12.82831-3.93712-2.77163-8.3365-5.81457-12.17468-8.69883h0Z"/>
+  <polygon class="cls-10" points="2180.61246 1046.80661 1148.94529 1046.80661 1131.21122 1026.80576 2198.32983 1026.80576 2180.61246 1046.80661"/>
+</svg>
