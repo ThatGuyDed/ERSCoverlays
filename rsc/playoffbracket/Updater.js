@@ -39,8 +39,6 @@ class GraphicsUpdater {
         })();
         this.simpleOperations = ['string', 'image'];
         this.operations = {
-            'string': (id, cellValue) => document.getElementById(id).innerHTML = cellValue,
-            'image': (id, cellValue) => document.getElementById(id).src = cellValue,
             'division': (ids, cellValue) => {
                 let container = document.querySelector('.back');
                 let elements = container.querySelectorAll('img');
@@ -51,8 +49,17 @@ class GraphicsUpdater {
                     } else {
                         element.style.display = 'none';
                     }
+
+                    
                 });
+                if(document.getElementById('scoresM16B') == "4"){
+                    document.getElementById(cellValue+"BR").style.display = 'block';
+                }
             },
+            'string': (id, cellValue) => {
+                document.getElementById(id).innerHTML = cellValue
+            },
+            'image': (id, cellValue) => document.getElementById(id).src = cellValue,
             'colours': (ids, cellValue) => {
                 document.getElementById(ids).style.backgroundColor = cellValue;
             },
