@@ -52,6 +52,8 @@ class GraphicsUpdater {
 
                     
                 });
+                let test = document.getElementById('scoresM16B') == "4";
+                let elementID = cellValue+"BR";
                 if(document.getElementById('scoresM16B') == "4"){
                     document.getElementById(cellValue+"BR").style.display = 'block';
                 }
