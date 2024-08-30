@@ -1,0 +1,168 @@
+@font-face {
+    font-family: "MadeTommyBlack";
+    src: url("fonts/MadeTommyBlack.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyBold";
+    src: url("fonts/MadeTommyBold.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyExtraBold";
+    src: url("fonts/MadeTommyExtraBold.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyLight";
+    src: url("fonts/MadeTommyLight.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyMedium";
+    src: url("fonts/MadeTommyMedium.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyRegular";
+    src: url("fonts/MadeTommyRegular.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyThin";
+    src: url("fonts/MadeTommyThin.otf");
+}
+
+.temp{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 1920px;
+    height: 1080px;
+}
+
+#backframe{
+    z-index: -1;
+    position: absolute;
+    top: -818px;
+    left: -1543px;
+    width: 5000px;
+    height: 2410px;
+
+}
+
+#timeimage{
+    position: absolute;
+    top: -802px;
+    left: -495px;
+    width: 2920px;
+
+}
+
+#ad_logos{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 1920px;
+    height: 1080px
+}
+
+.fixture-div{
+    z-index: 3;
+}
+
+.tierlogos{
+    width: 40px;
+    height:40px;
+}
+
+.teamlogo{
+    width: 70px;
+    height: 70px;
+}
+
+.teamname{
+    font-family: MadeTommyBold;
+    font-size: 17px;
+    color: white;
+    width: 105px;
+    text-align: center;
+    height: 50px;
+}
+
+#tickertime{
+    position: absolute;
+    left: 1730px;
+    top: 925px;
+    width: 175px;
+    height: 62px;
+    font-family: MadeTommyBold;
+    color: white;
+    font-size: 57px;
+    text-align: center;
+}
+
+.tiertext{
+    font-family: MadeTommyBold;
+    font-size: 15px;
+    width: 160px;
+}
+
+.timetext{
+    font-size: 12px;
+    font-family: MadeTommyLight;
+    width: 200px;
+    text-align: left;
+    color: white;
+}
+
+.scores{
+    font-family: MadeTommyBold;
+    font-size: 32px;
+    color: white;
+    width: 76px;
+    height: 35px;
+    text-align: center;
+}
+
+#schedule{
+    position: absolute;
+    top: 29px;
+    left: 0;
+    width: 251px;
+    height: 56px;
+    text-align: center;
+    vertical-align: center;
+    color: white;
+    font-family: MadeTommyBold;
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+#title{
+    position: absolute;
+    top: 948px;
+    left: 249px;
+    width: 1487px;
+    height: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: center;
+    color: white;
+    font-family: MadeTommyBold;
+    letter-spacing: 2px;
+    font-size: 42px;
+}
+
+#backintext{
+    font-size: 24px;
+    font-family: MadeTommyBold;
+    position: absolute;
+    top: 959px;
+    left: 1715px;
+    width: 204px;
+    height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #da6517;
+}

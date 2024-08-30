@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Offline Screen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img id="images" src="ModularPieces/top.png">
+    <img id="logo" src="ModularPieces/logo.png">
+
+    <p id="tickertime"></p>
+    <span id="backinbool" style="display: none;"></span>
+    <span id="timertime" style="display: none"></span>
+
+    
+    <span id="subtitle"></span>
+    <span id="title"></span>
+
+    <script src="ticker-logic.js"></script>
+    <script src="Updater.js"></script>
+    <script src="regex-operation.js"></script>
+
+    <script>
+        //define settings to use
+        const settings = {
+            'string' : {
+                'Z3' : 'backinbool',
+                'Z2' : 'timertime',
+                'Y3' : 'subtitle',
+                'Y2' : 'title'
+            },
+            "image": {
+
+            }
+        };
+
+
+
+        //define spreadsheet
+        const spreadsheetID = '1mcLGEj5AlIWYOuKsoWm_QexjG8EaHdnj2mRhQxS1yaU';
+
+        //select worksheet
+        const worksheetName = 'Output';
+
+        //specify api key
+        const apiKey = 'AIzaSyASSy3E-sz7GhcO9qUHdKtx8lr03dRhYtM';
+
+        //update inteval every 3 seconds
+        const updateInterval = 3000;
+
+        const u = new GraphicsUpdater(settings, spreadsheetID, worksheetName, apiKey, updateInterval, false);
+
+        const tickInterval = 10;
+
+        const l = new TickerUpdater(tickInterval);
+
+
+
+        //import operation preset
+        u.addOperation('regex', regexOperation);
+
+        //start updating u
+        u.startUpdating();
+    </script>
+</body>
+</html>

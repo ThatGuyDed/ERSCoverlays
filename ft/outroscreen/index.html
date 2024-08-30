@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--    <img src="ModularPieces/temp.png" style="position:absolute; top:0; left:0; z-index: -1; opacity: 20%;">-->
+    <img src="ModularPieces/back.png" id="backimage">
+    <img src="ModularPieces/r1.png" id="ruleone">
+    <span id="scrolling-text">
+    </span>
+
+<script>
+    window.onload = function() {
+        setTimeout(function() {
+            var scrollingText = document.getElementById("scrolling-text");
+            var scrollHeight = scrollingText.scrollHeight;
+            var count = 0;
+            function scrollToBottom() {
+                if (count == 0)
+                    if (scrollingText.scrollTop != scrollHeight) {
+                        scrollingText.scrollTop += 1;
+                        setTimeout(scrollToBottom, 15);
+                    }else{
+                        count = 1
+                    }
+            }
+            scrollToBottom()
+
+        }, 3000);
+    };
+</script>
+
+<script src="Updater.js"></script>
+    <script src="regex-operation.js"></script>
+    <script>
+        //define settings to use
+        const settings = {
+            'string' : {
+                'AA2' : 'scrolling-text'
+            }
+        };
+
+
+
+        //define spreadsheet
+        const spreadsheetID = '1mcLGEj5AlIWYOuKsoWm_QexjG8EaHdnj2mRhQxS1yaU';
+
+        //select worksheet
+        const worksheetName = 'Output';
+
+        //specify api key
+        const apiKey = 'AIzaSyASSy3E-sz7GhcO9qUHdKtx8lr03dRhYtM';
+
+        //update inteval every 3 seconds
+        const updateInterval = 3000;
+
+        const u = new GraphicsUpdater(settings, spreadsheetID, worksheetName, apiKey, updateInterval, false);
+
+        //import operation preset
+        u.addOperation('regex', regexOperation);
+
+        //start updating u
+        u.startUpdating();
+    </script>
+</body>
+</html>

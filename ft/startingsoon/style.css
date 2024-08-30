@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "MadeTommyBold";
+    src: url("fonts/MadeTommyBold.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyLight";
+    src: url("fonts/MadeTommyLight.otf");
+}
+
+body{
+
+}
+
+#images{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
+}
+
+#logo{
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    left: 660px;
+    top: 45px;
+}
+
+#tickertime{
+    position: absolute;
+    display: block;
+    width: 300px;
+    height: 107px;
+    top: 787px;
+    left: 810px;
+    text-align: center;
+    vertical-align: center;
+    color: white;
+    font-size: 55pt;
+    font-family: MadeTommyBold;
+}
+
+#timertime{
+    color: black;
+    font-size: 50px;
+}
+
+#backinbool{
+    color: blue;
+    font-size: 10px;
+}
+
+#subtitle{
+    position: absolute;
+    left:786px;
+    top:692px;
+    width: 348px;
+    height: 30px;
+    font-size: 26px;
+    color: #db6415;
+    font-family: MadeTommyBold;
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+#title{
+    position: absolute;
+    left: 572px;
+    top: 725px;
+    width: 776px;
+    height: 65px;
+    font-size: 62px;
+    font-family: MadeTommyBold;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}

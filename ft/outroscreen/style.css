@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "MadeTommyBlack";
+    src: url("fonts/MadeTommyBlack.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyBold";
+    src: url("fonts/MadeTommyBold.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyExtraBold";
+    src: url("fonts/MadeTommyExtraBold.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyLight";
+    src: url("fonts/MadeTommyLight.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyMedium";
+    src: url("fonts/MadeTommyMedium.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyRegular";
+    src: url("fonts/MadeTommyRegular.otf");
+}
+
+@font-face {
+    font-family: "MadeTommyThin";
+    src: url("fonts/MadeTommyThin.otf");
+}
+
+#backimage{
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+}
+
+#ruleone{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 1920px;
+    height: 1080px;
+}
+
+#scrolling-text {
+    position: absolute;
+    top: 474px;
+    left: 493px;
+    display: block;
+    height: 446px;
+    width: 930px;
+    overflow: hidden;
+    text-align: center;
+    font-family: MadeTommyRegular;
+    color: white;
+    font-size: 26px;
+}
+
+/*#scrolling-text p {*/
+/*    margin: 0;*/
+/*    padding: 10px;*/
+/*}*/
+
+/*@keyframes scroll {*/
+/*    0% {*/
+/*        transform: translateY(0);*/
+/*    }*/
+/*    100% {*/
+/*        transform: translateY(-100%);*/
+/*    }*/
+/*}*/
+
+/*#scrolling-text.scroll-reset {*/
+/*    animation: scroll-reset 15s linear infinite;*/
+/*}*/
+
+
+
+
