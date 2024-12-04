@@ -22,12 +22,13 @@
     <div id="ScoreBoardStats">
         <span id="streamTitle" style="z-index: 5"></span>
         <span id="ClockTime" class="Time" style="z-index: 5"></span>
-        <span id="GameScore" style="z-index: 5"></span>
         <div class="BlueTeamStuff">
+            <span id="BlueScore" style="z-index: 5"></span>
             <img id="BlueTeamImage" class="BlueTeamImage" style="z-index: 5">
             <span id="BlueTeamName" class="BlueTeamName" style="z-index: 5"></span>
         </div>
         <div class="OrangeTeamStuff">
+            <span id="OrangeScore" style="z-index: 5"></span>
             <img id="OrangeTeamImage" class="OrangeTeamImage" style="z-index: 5">
             <span id="OrangeTeamName" class="OrangeTeamName" style="z-index: 5"></span>
         </div>
@@ -51,7 +52,6 @@
             <img class="FocusPlayerImage" src="ModularPieces/FocusPlayerBlue.png">
             <div class="FocusPlayerStats">
                 <span class="FocusPlayerName">name</span>
-                <span class="FocusPlayerScore">100</span>
                 <span class="FocusPlayerGoals">1</span>
                 <span class="FocusPlayerAssists">1</span>
                 <span class="FocusPlayerSaves">1</span>
@@ -60,16 +60,15 @@
 <!--            <img id="BottomBoostLeft" class="BottomBoost" src="ModularPieces/BoostBlue.png">-->
 <!--            <img id="BlueBoostMeter" src="ModularPieces/BlueBoostMeter.png">-->
             <div class="container">
-                <div class="progress" style="--i:75;--clr:#0a7382;">
-                    <span id="BottomBoostBoostLeft" class="BottomBoostBoost">100</span>
+                <div class="progress-bar" id="BoostBarBlue" style="--boost: 75%; --clr: #0a7382;">
                 </div>
+                <span id="BottomBoostBoostLeft" class="BottomBoostBoost">75</span>
             </div>
         </div>
         <div class="FocusedPlayer FocusPlayerOrange">
             <img id="FocusPlayerImage" src="ModularPieces/FocusPlayerOrange.png">
             <div class="FocusPlayerStats">
                 <span class="FocusPlayerName">name</span>
-                <span class="FocusPlayerScore">100</span>
                 <span class="FocusPlayerGoals">1</span>
                 <span class="FocusPlayerAssists">1</span>
                 <span class="FocusPlayerSaves">1</span>
@@ -78,9 +77,9 @@
 <!--            <img id="BottomBoostRight" class="BottomBoost" src="ModularPieces/BoostOrange.png">-->
 <!--            <img id="OrangeBoostMeter" src="ModularPieces/OrangeBoostMeter.png">-->
             <div class="container">
-                <div class="progress" style="--i:75;--clr:#f58238;">
-                    <span id="BottomBoostBoostRight" class="BottomBoostBoost">100</span>
+                <div class="progress-bar" id="BoostBarOrange" style="--boost: 75%; --clr: #f58238;">
                 </div>
+                <span id="BottomBoostBoostRight" class="BottomBoostBoost">75</span>
             </div>
         </div>
     </div>

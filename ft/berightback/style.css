@@ -44,10 +44,10 @@
 #backframe{
     z-index: -1;
     position: absolute;
-    top: -818px;
-    left: -1543px;
-    width: 5000px;
-    height: 2410px;
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 1080px;
 
 }
 
@@ -127,22 +127,22 @@
 
 #schedule{
     position: absolute;
-    top: 29px;
-    left: 0;
+    top: 195px;
+    left: 25px;
     width: 251px;
     height: 56px;
     text-align: center;
     vertical-align: center;
     color: white;
     font-family: MadeTommyBold;
-    font-size: 42px;
+    font-size: 60px;
     text-transform: uppercase;
 }
 
 #title{
     position: absolute;
-    top: 948px;
-    left: 249px;
+    top: 917px;
+    left: 200px;
     width: 1487px;
     height: 70px;
     text-align: center;
@@ -151,7 +151,7 @@
     color: white;
     font-family: MadeTommyBold;
     letter-spacing: 2px;
-    font-size: 42px;
+    font-size: 55px;
 }
 
 #backintext{
@@ -164,5 +164,5 @@
     height: 26px;
     text-align: center;
     text-transform: uppercase;
-    color: #da6517;
+    color: #44383c;
 }

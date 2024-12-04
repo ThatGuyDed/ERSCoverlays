@@ -38,15 +38,30 @@ function connect() {
                     $('#FocusPlayer').css("opacity","1");
                     if (player == jEvent.data.game.target) {
                         console.log(jEvent.data.players[player].team);
+                        var boost = jEvent.data.players[player].boost;
                         //$('.BottomBoost').css("clip-path", ("inset(" + (100 - jEvent.data.players[player].boost).toString() + "% 0px 0px 0px)"));
-                        if (jEvent.data.players[player].team == 0) {
-                            $('.FocusTeamLogo').attr("src", $("#BlueTeamImage").attr("src"));
-                            $('.FocusPlayerBlue').css("opacity","1");
-                            $('.FocusPlayerOrange').css("opacity","0");
-                        } else {
-                            $('.FocusTeamLogo').attr("src", $("#OrangeTeamImage").attr("src"));
-                            $('.FocusPlayerBlue').css("opacity","0");
-                            $('.FocusPlayerOrange').css("opacity","1");
+                        if (jEvent.data.players[player].team == 0) { // Blue Team
+                            let boostPercentage = 100 - boost; // Calculate the width to fill from right to left
+                            $('#BoostBarBlue').css('width', `${boost*3.8}px`)   // Show Blue Boost Bar and set width
+                            $('#BoostBarOrange').hide();   // Hide Orange Boost Bar
+                            $('#BoostBarBlue').show();
+                            $('#BottomBoostBoostLeft').text(boost);
+                        
+                            // Show the focused player for Blue Team, hide for Orange Team
+                            $('.FocusPlayerBlue').css("opacity", "1");
+                            $('.FocusPlayerOrange').css("opacity", "0");
+                        
+                        } else { // Orange Team
+                            let boostPercentage = 100 - boost; // Calculate the width to fill from right to left
+                            $('#BoostBarOrange').css('width', `${boost*3.8}px`);  // Show Orange Boost Bar and set width
+                            $('#BoostBarOrange').show();   // Hide Orange Boost Bar
+                            $('#BoostBarBlue').hide();
+                            $('#BottomBoostBoostRight').text(boost);
+                        
+                            // Show the focused player for Orange Team, hide for Blue Team
+                            $('.FocusPlayerOrange').css("opacity", "1");
+                            $('.FocusPlayerBlue').css("opacity", "0");
+                        
                         }
                         $('.FocusPlayerName').text(jEvent.data.players[player].name);
                         $('.FocusPlayerGoals').text(jEvent.data.players[player].goals);
@@ -142,7 +157,8 @@ function connect() {
             // $('.OrangeTeamName').text(jEvent.data.game.teams[1].name);
 
             // Set team scores
-            $('#GameScore').text(jEvent.data.game.teams[0].score + "-" + jEvent.data.game.teams[1].score)
+            $('#BlueScore').text(jEvent.data.game.teams[0].score)
+            $('#OrangeScore').text(jEvent.data.game.teams[1].score)
 
             //Time stuff
             var currentTime = jEvent.data.game.time_seconds;
@@ -458,6 +474,7 @@ function connect() {
             //BLUE
             if (jEvent.data.scorer.teamnum == 0) {
                 if (jEvent.data.assister.name == "") {
+                    $('.Scorer').css('color', '#FFFFFF')
                     $('.GoalSpeed').text(Math.round(jEvent.data.goalspeed)+" KM/H");
                     document.getElementById('OrangeReplayAssisted').style.display = 'none';
                     document.getElementById('BlueReplayAssisted').style.display = '';
@@ -465,6 +482,7 @@ function connect() {
                     document.getElementById('AssistedText').style.display = 'none';
                 }
                 else {
+                    $('.Scorer').css('color', '#FFFFFF')
                     $('.GoalTime').text("TIME: " + document.getElementById("ClockTime").textContent);
                     $('.GoalSpeed').text(Math.round(jEvent.data.goalspeed)+" KM/H");
                     document.getElementById('OrangeReplayAssisted').style.display = 'none';
@@ -475,6 +493,7 @@ function connect() {
             }
             else {
                 if (jEvent.data.assister.name == "") {
+                    $('.Scorer').css('color', '#372f32')
                     $('.GoalTime').text("TIME: " + document.getElementById("ClockTime").textContent);
                     $('.GoalSpeed').text(Math.round(jEvent.data.goalspeed)+" KM/H");
                     document.getElementById('OrangeReplayAssisted').style.display = '';
@@ -483,6 +502,7 @@ function connect() {
                     document.getElementById('AssistedText').style.display = 'none';
                 }
                 else{
+                    $('.Scorer').css('color', '#372f32')
                     $('.GoalTime').text("TIME: " + document.getElementById("ClockTime").textContent);
                     $('.GoalSpeed').text(Math.round(jEvent.data.goalspeed)+" KM/H");
                     document.getElementById('OrangeReplayAssisted').style.display = '';

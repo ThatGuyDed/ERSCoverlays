@@ -1,40 +1,40 @@
 @font-face {
-    font-family: "MadeTommyBlack";
-    src: url("fonts/MadeTommyBlack.otf");
+    font-family: "sinter-black";
+    src: url("fonts/inter-black.ttf");
 }
 
 @font-face {
-    font-family: "MadeTommyBold";
-    src: url("fonts/MadeTommyBold.otf");
+    font-family: "sinter-bold";
+    src: url("fonts/inter-bold.ttf");
 }
 
 @font-face {
-    font-family: "MadeTommyExtraBold";
-    src: url("fonts/MadeTommyExtraBold.otf");
+    font-family: "sinter-extrabold";
+    src: url("fonts/inter-extrabold.ttf");
 }
 
 @font-face {
-    font-family: "MadeTommyLight";
-    src: url("fonts/MadeTommyLight.otf");
+    font-family: "sinter-light";
+    src: url("fonts/inter-light.ttf");
 }
 
 @font-face {
-    font-family: "MadeTommyMedium";
-    src: url("fonts/MadeTommyMedium.otf");
+    font-family: "sinter-medium";
+    src: url("fonts/inter-medium.ttf");
 }
 
 @font-face {
-    font-family: "MadeTommyRegular";
-    src: url("fonts/MadeTommyRegular.otf");
+    font-family: "sinter-regular";
+    src: url("fonts/inter-regular.ttf");
 }
 
 @font-face {
-    font-family: "MadeTommyThin";
-    src: url("fonts/MadeTommyThin.otf");
+    font-family: "sinter-thin";
+    src: url("fonts/inter-thin.ttf");
 }
 
 body{
-    font-family: MadeTommyBold;
+    font-family: sinter-extrabold;
 }
 
 #InGameOverlay{
@@ -45,19 +45,19 @@ body{
 
 #ClockTime{
     position: absolute;
-    top: 74px;
+    top: 31px;
     width: 1920px;
     text-align: center;
     color: white;
-    font-size: 18px;
-    font-family: MadeTommyBold;
+    font-size: 35px;
+    font-family: sinter-extrabold;
 }
 
 #streamTitle{
     position: absolute;
     top: 12px;
     left: 456px;
-    font-family: MadeTommyLight;
+    font-family: sinter-light;
     font-size: 13px;
     color: white;
     text-align: center;
@@ -66,16 +66,30 @@ body{
     height: 16px;
 }
 
-#GameScore{
+#BlueScore{
     position: absolute;
-    top: 27px;
-    left: 912px;
+    top: 29px;
+    left: 778px;
     width: 94px;
     height: 44px;
-    font-size: 40px;
+    font-size: 38px;
     text-align: center;
-    font-family: MadeTommyBold;
+    font-family: sinter-bold;
     color: white;
+    overflow: visible;
+    white-space: nowrap;
+}
+
+#OrangeScore{
+    position: absolute;
+    top: 29px;
+    right: 778px;
+    width: 94px;
+    height: 44px;
+    font-size: 38px;
+    text-align: center;
+    font-family: sinter-bold;
+    color: #372f32;
     overflow: visible;
     white-space: nowrap;
 }
@@ -90,14 +104,14 @@ body{
 }
 
 #OrangeTeamName{
-    font-family: MadeTommyBold;
-    font-size: 1.25vw;
+    font-family: sinter-bold;
+    font-size: 1.45vw;
     position: absolute;
-    top: 38px;
-    right: 430px;
+    top: 35px;
+    right: 470px;
     width: 300px;
     height: 44px;
-    text-align: left;
+    text-align: center;
     color: white;
 }
 
@@ -118,7 +132,7 @@ body{
     height: 45px;
     position: absolute;
     top: 30px;
-    left: 802px;
+    left: 865px;
 }
 
 .OrangeTeamImage{
@@ -126,18 +140,18 @@ body{
     height: 45px;
     position: absolute;
     top: 30px;
-    right: 785px;
+    right: 865px;
 }
 
 #BlueTeamName{
-    font-family: MadeTommyBold;
-    font-size: 1.25vw;
+    font-family: sinter-bold;
+    font-size: 1.45vw;
     position: absolute;
-    top: 38px;
-    left: 444px;
+    top: 35px;
+    left: 470px;
     width: 300px;
     height: 44px;
-    text-align: right;
+    text-align: center;
     color: white;
 }
 
@@ -185,59 +199,64 @@ body{
     top: 1047px;
     width: 75px;
     height: 26px;
-    text-align: right;
+    text-align: left;
 }
 
 .FocusPlayerGoals{
     position: absolute;
-    left: 1525px;
-    top: 1047px;
+    left: 470px;
+    top: 1005px;
     width: 39px;
     height: 26px;
-    text-align: right;
+    font-size: 16px;
+    text-align: left;
 }
 
 .FocusPlayerAssists{
     position: absolute;
-    left: 1715px;
-    top: 1047px;
+    left: 470px;
+    top: 1022px;
     width: 39px;
     height: 26px;
-    text-align: right;
+    font-size: 16px;
+    text-align: left;
 }
 
 .FocusPlayerSaves{
     position: absolute;
-    left: 1798px;
-    top: 1047px;
+    left: 470px;
+    top: 1039px;
     width: 39px;
     height: 26px;
-    text-align: right;
+    font-size: 16px;
+    text-align: left;
 }
 
 .FocusPlayerShots{
     position: absolute;
-    left: 1623px;
-    top: 1047px;
+    left: 470px;
+    top: 1056px;
     width: 39px;
     height: 26px;
-    text-align: right;
+    font-size: 16px;
+    text-align: left;
 }
 
 .FocusPlayerName{
     position: absolute;
-    top: 1047px;
-    left: 1127px;
+    top: 1030px;
+    left: 100px;
     width: 275px;
     height: 26px;
+    font-size: 40px;
+    font-family: sinter-extrabold;
     text-align: left;
-    text-align: center;
 }
 
 .BottomBoost{
     position: absolute;
     width: 224px;
-    left: 1687px;
+    left: 1887px;
     top: 811px;
     transition: clip-path 0.35s;
 }
@@ -245,14 +264,14 @@ body{
 #BottomBoostLeft{
     position: absolute;
     top: 868px;
-    left: 1747px;
+    left: 1847px;
     width: 169px;
     height: 169px;
 }
 
 #BottomBoostRight{
     top: 868px;
-    left: 1747px;
+    left: 1847px;
     width: 169px;
     height: 169px;
 }
@@ -262,7 +281,7 @@ body{
     width: 141px;
     height: 141px;
     top: 882px;
-    left: 1761px;
+    left: 1861px;
 }
 
 #BlueBoostMeter::before{
@@ -296,7 +315,7 @@ body{
     width: 141px;
     height: 141px;
     top: 882px;
-    left: 1761px;
+    left: 1861px;
 
 }
 
@@ -313,10 +332,10 @@ body{
 
 .BottomBoostBoost{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 45px;
+    top:10px;
+    left:0px;
+    font-size: 40px;
+    font-family: sinter-extrabold;
     width: 96px;
     z-index: 100;
     text-align: center;
@@ -333,7 +352,7 @@ body{
 /*    height: 55px;*/
 /*    text-align: center;*/
 /*    font-size: 50px;*/
-/*    font-family: MadeTommyBold;*/
+/*    font-family: sinter-bold;*/
 /*}*/
 
 /*#BottomBoostBoostRight{*/
@@ -344,7 +363,7 @@ body{
 /*    height: 55px;*/
 /*    text-align: center;*/
 /*    font-size: 50px;*/
-/*    font-family: MadeTommyBold;*/
+/*    font-family: sinter-bold;*/
 /*}*/
 
 .TeamBoostSet{
@@ -431,9 +450,9 @@ body{
 .GoalSpeed{
     position: absolute;
     top: 1026px;
-    left: 834px;
+    right: 175px;
     width: 250px;
-    font-family: MadeTommyBold;
+    font-family: sinter-bold;
     font-size: 35px;
     text-align: center;
     color: white;
@@ -441,11 +460,11 @@ body{
 
 .Scorer{
     position: absolute;
-    top: 1026px;
-    left: 356px;
+    top: 1010px;
+    left: 734px;
     width: 450px;
-    font-family: MadeTommyBold;
-    font-size: 35px;
+    font-family: sinter-extrabold;
+    font-size: 50px;
     text-align: center;
     color: white;
 }
@@ -453,9 +472,9 @@ body{
 .Assister{
     position: absolute;
     top: 1026px;
-    left: 1112px;
+    left: 90px;
     width: 450px;
-    font-family: MadeTommyBold;
+    font-family: sinter-bold;
     font-size: 35px;
     text-align: center;
     color: white;
@@ -473,57 +492,40 @@ body{
 
 .container {
     position: absolute;
-    top: 878px;
-    left: 1756px;
+    top: 1020px;
+    left: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 40px;
+    font-family: sinter-extrabold;
+
+}
+/* Updated CSS for Boost Bar */
+.progress-bar {
+    position: absolute; /* Allows positioning anywhere on the screen */
+    width: 380px; /* Total width of the boost bar */
+    height: 18px; /* Height of the boost bar */
+    background-color: rgba(31, 26, 26, 0); /* Background color (can also use an image) */
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 10px;
+    font-family: sinter-extrabold;
 }
 
-.container .progress {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    color: #fff;
-    background: rgb(31, 26, 26) linear-gradient(to right, transparent 50%, var(--clr) 0);
-}
-
-/*.progress span{*/
-/*    position: absolute;*/
-/*    top: 50%;*/
-/*    left: 50%;*/
-/*    transform: translate(-50%, -50%);*/
-/*    z-index: 1;*/
-/*    color: white;*/
-/*}*/
-
-.progress::before {
-    content: '';
-    display: block;
-    height: 100%;
-    margin-left: 50%;
-    transform-origin: left;
-    border-radius: 0 100% 100% 0/50%;
-    transition: transform 0.25s ease-out;
-}
-
-.progress::after {
+#BoostBarBlue::before,
+#BoostBarOrange::before {
     content: '';
     position: absolute;
-    inset: 10px;
-    border-radius: 50%;
-    background: rgb(31, 26, 26);
+    height: 100%;
+    width: 100%;
+    background-image: url('./ModularPieces/BlueBoostMeter.png'); /* Default image for blue team or orange team */
+    background-size: 100% 100%; /* Ensure the image stretches over the entire width */
+    background-position: right; /* Ensure the fill starts from the left */
+    transition: background-position 0.25s ease-out; /* Smooth transition for width change */
 }
 
-.progress::before{
-    background: var(--clr);
-    transform: rotate(calc(((var(--i) - 50) * 0.01turn)));
-}
-
-.progress.less::before{
-    background: rgb(31, 26, 26);
-    transform: rotate(calc(((var(--i) - 0) * 0.01turn)));
+#BoostBarOrange::before {
+    background-image: url('./ModularPieces/OrangeBoostMeter.png'); /* Image for the orange team */
 }
